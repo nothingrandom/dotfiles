@@ -1,4 +1,11 @@
 if test ! $(which spoof)
 then
-  sudo npm install spoof -g
+  yarn global install spoof
+fi
+
+if test ! $(which pure-prompt)
+then
+  yarn global install pure-prompt
+  autoload -U promptinit; promptinit
+  prompt pure
 fi

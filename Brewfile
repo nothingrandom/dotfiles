@@ -23,6 +23,7 @@ brew 'unrar'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
+brew 'legit'
 
 cask '1password'
 cask 'atom'
