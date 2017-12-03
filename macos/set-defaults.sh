@@ -27,6 +27,9 @@ defaults write -g NSScrollViewRubberbanding -int 0
 sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
 
+# System: Disable UI sounds
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
 ###############################################################################
 # Dock                                                                       #
 ###############################################################################
