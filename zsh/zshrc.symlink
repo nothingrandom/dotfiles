@@ -49,5 +49,5 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-ZSH_THEME="refined"
-plugins=(zsh-syntax-highlighting)
+
+source /Users/benjamin/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
