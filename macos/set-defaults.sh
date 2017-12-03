@@ -101,6 +101,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Lock: Disable sleep
 sudo systemsetup -setcomputersleep Never
+defaults -currentHost write com.apple.screensaver idleTime 0
 
 ###############################################################################
 # Trackpad                                                                    #
