@@ -4,9 +4,12 @@
       beautify_on_save: true
     css:
       beautify_on_save: true
+    general:
+      _analyticsUserId: "7e8b059b-0aef-41a6-b936-961a8bf10b89"
     html:
       beautify_on_save: true
     js:
+      default_beautifier: "ESLint Fixer"
       disabled: true
     jsx:
       disabled: true
@@ -16,9 +19,30 @@
       beautify_on_save: true
     ruby:
       default_beautifier: "Ruby Beautify"
+    scss:
+      convert_quotes: "single"
+      no_lead_zero: true
+      preserve_newlines: true
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "''"
+      "``"
+      "“”"
+      "‘’"
+      "«»"
+      "‹›"
+      "<>"
+    ]
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
@@ -35,43 +59,70 @@
         "BUCK"
       ]
     disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
+      "language-gfm"
       "react"
-      "linter-rubocop"
-      "tree-view"
+      "background-tips"
+      "atom-bracket-highlight"
+      "wrap-guide"
+      "minimap"
+      "wrap-guide"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
     ignoredNames: [
-      ".bundle"
       ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
     ]
-    telemetryConsent: "no"
+    projectHome: "/Users/benjamin/Documents/Git"
+    telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Hack"
+    fontSize: 12
     invisibles: {}
+    preferredLineLength: 120
     showIndentGuide: true
+    showInvisibles: true
     softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "5c718e5b-27c9-44cb-b1f6-102906c8b7db"
   "go-plus":
     panel:
       currentHeight: "24.11111111111111vh"
     panelDisplayMode: "closed"
     test: {}
   "linter-eslint":
+    disableWhenNoEslintConfig: false
+    eslintrcPath: "~/.eslintrc.js"
+    fixOnSave: true
+    lintHtmlFiles: true
+    showRuleIdInMessage: false
     useGlobalEslint: true
   "linter-rubocop": {}
+  "linter-scss-lint":
+    executablePath: "/Users/benjamin/.rvm/gems/ruby-2.3.1/wrappers/scss-lint"
   "linter-ui-default":
-    panelHeight: 301
+    panelHeight: 338
+    showPanel: true
+  "markdown-preview":
+    useGitHubStyle: true
+  "multi-wrap-guide":
+    columns: [
+      80
+      100
+      120
+    ]
+    locked: true
   nuclide:
     "atom-ide-code-format":
       formatOnType: false
@@ -79,19 +130,33 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+  "project-manager":
+    includeGitRepositories: true
   "release-notes":
     viewedVersion: "0.89.0"
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+    themeColor: "Steel"
   "spell-check":
     grammars: [
-      "text.plain"
+      "source.asciidoc"
       "source.gfm"
       "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
       "text.html.basic"
     ]
   stylefmt:
     formatOnSave: true
+  "sync-settings":
+    _lastBackupHash: "a79769c43a282dbdae42c026c20b42eaf522b132"
+    gistId: "1a878d0f2f175ae5048a30f7dcee7e81"
+    personalAccessToken: "547d3ccb8d49f686f95babbab30016e60e62142a"
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".js.jsx.react.source":
   editor:
     autoIndent: true
