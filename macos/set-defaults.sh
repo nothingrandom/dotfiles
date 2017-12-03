@@ -24,8 +24,8 @@ defaults write com.apple.universalaccess reduceTransparency -boolean true
 defaults write -g NSScrollViewRubberbanding -int 0
 
 # System: Disable guest access
-defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
-defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
 
 ###############################################################################
 # Dock                                                                       #
@@ -100,7 +100,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Lock: Disable sleep
-systemsetup -setcomputersleep Never
+sudo systemsetup -setcomputersleep Never
 
 ###############################################################################
 # Trackpad                                                                    #
