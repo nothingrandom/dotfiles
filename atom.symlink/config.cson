@@ -110,7 +110,7 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-scss-lint":
-    executablePath: "/Users/benjamin/.rvm/gems/ruby-2.3.1/wrappers/scss-lint"
+    executablePath: "/usr/local/bin/scss-lint"
   "linter-ui-default":
     panelHeight: 338
     showPanel: true
@@ -149,10 +149,6 @@
     ]
   stylefmt:
     formatOnSave: true
-  "sync-settings":
-    _lastBackupHash: "a79769c43a282dbdae42c026c20b42eaf522b132"
-    gistId: "1a878d0f2f175ae5048a30f7dcee7e81"
-    personalAccessToken: "547d3ccb8d49f686f95babbab30016e60e62142a"
   welcome:
     showOnStartup: false
   whitespace:
