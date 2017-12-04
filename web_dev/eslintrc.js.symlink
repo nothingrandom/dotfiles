@@ -8,24 +8,10 @@ module.exports = {
   },
   globals: {
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'airbnb-base'],
   plugins: [
   ],
   'rules': {
-    'allow-parens': 0,
-    'one-var': 1,
-    'import/first': 0,
-    'no-undef': 0,
-    'no-unused-labels': 0,
-    'no-unused-vars': 1,
-    'semi': 1,
-    'no-console': 1,
-    'indent': 0,
-    'comma-dangle': 1,
-    'space-in-parens': 1,
-    'space-before-blocks': 1,
-    'quotes': ['warn', 'single', {'avoidEscape': true}],
-    'space-before-function-paren': ['error', 'never'],
-    'brace-style': [2, 'stroustrup', {'allowSingleLine': true}]
+    'max-len': ['warn', 120]
   }
 }
