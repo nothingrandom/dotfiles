@@ -30,5 +30,4 @@ alias gstp='git stash pop'
 # Deletes a branch if it's been merged in to HEAD
 alias gbda='git branch --merged | command grep -vE "^(*|\smaster\s$)" | command xargs -n 1 git branch -d'
 
-alias ggsup='git branch --set-upstream-to = origin/$(current_branch)'
-alias gpsup='git push --set-upstream origin $(current_branch)'
+alias gpsup='git push --set-upstream origin -u head'
