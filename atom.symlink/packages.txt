@@ -9,7 +9,9 @@ git-blame@1.2.2
 highlight-selected@0.13.1
 intentions@1.1.5
 language-babel@2.74.2
+language-kotlin@0.5.0
 language-markdown@0.25.1
+language-protobuf@0.7.1
 language-vue@0.23.1
 linter@2.2.0
 linter-eslint@8.3.2
