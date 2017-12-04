@@ -5,5 +5,7 @@ fi
 
 if test ! $(which eslint)
 then
-  # sudo yarn global add eslint
+  npm i -g eslint
+  npm i -g eslint-plugin-import
+  npm i -g eslint-config-airbnb-base
 fi

@@ -101,10 +101,12 @@
       currentHeight: "24.11111111111111vh"
     panelDisplayMode: "closed"
     test: {}
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
     eslintrcPath: "~/.eslintrc.js"
     fixOnSave: true
+    globalNodePath: "/usr/local"
     lintHtmlFiles: true
     showRuleIdInMessage: false
     useGlobalEslint: true
