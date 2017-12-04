@@ -66,6 +66,7 @@
       "wrap-guide"
       "minimap"
       "wrap-guide"
+      "atom-beautify"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
