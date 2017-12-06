@@ -113,9 +113,9 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-scss-lint":
-    executablePath: "/usr/local/bin/scss-lint"
+    executablePath: "/Users/benjamin/.rbenv/shims/scss-lint"
   "linter-ui-default":
-    panelHeight: 338
+    panelHeight: 125
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true

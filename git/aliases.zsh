@@ -6,6 +6,8 @@ then
   alias git=$hub_path
 fi
 
+alias g='git'
+
 # The rest of my fun git aliases
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -14,6 +16,7 @@ alias gp='git push origin HEAD'
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
+# Add diff lines one chunck at a time
 alias gap='git add -p'
 
 alias gc='git commit -m'
@@ -27,7 +30,10 @@ alias ge='git-edit-new'
 alias gsta='git stash save'
 alias gstp='git stash pop'
 
+alias gai='cp "$HOME/.gitignore" ".gitignore"'
+
 # Deletes a branch if it's been merged in to HEAD
 alias gbda='git branch --merged | command grep -vE "^(*|\smaster\s$)" | command xargs -n 1 git branch -d'
 
+# Adds a new branch to the upstream under the same name and pushes it
 alias gpsup='git push --set-upstream origin -u head'
