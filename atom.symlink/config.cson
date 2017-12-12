@@ -106,7 +106,6 @@
   "linter-eslint":
     disableWhenNoEslintConfig: false
     eslintrcPath: "~/.eslintrc.js"
-    fixOnSave: true
     globalNodePath: "/usr/local"
     lintHtmlFiles: true
     showRuleIdInMessage: false
