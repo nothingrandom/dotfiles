@@ -33,7 +33,7 @@ alias gstp='git stash pop'
 alias gai='cp "$HOME/.gitignore" ".gitignore"'
 
 # Deletes a branch if it's been merged in to HEAD
-alias gbda='git branch --merged | command grep -vE "^(*|\smaster\s$)" | command xargs -n 1 git branch -d'
+alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
 
 # Adds a new branch to the upstream under the same name and pushes it
 alias gpsup='git push --set-upstream origin -u head'
