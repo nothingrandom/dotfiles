@@ -1,0 +1,132 @@
+{
+	"name": "vscode-scss",
+	"displayName": "SCSS IntelliSense",
+	"description": "Advanced autocompletion and refactoring support for SCSS",
+	"version": "0.6.2",
+	"preview": true,
+	"publisher": "mrmlnc",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.9.0"
+	},
+	"icon": "icon.png",
+	"homepage": "https://github.com/mrmlnc/vscode-scss/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrmlnc/vscode-scss"
+	},
+	"keywords": [
+		"scss",
+		"autocompletion",
+		"intellisense",
+		"refactor"
+	],
+	"categories": [
+		"Languages"
+	],
+	"activationEvents": [
+		"onLanguage:scss"
+	],
+	"main": "./out/client.js",
+	"contributes": {
+		"configuration": {
+			"properties": {
+				"scss.scannerDepth": {
+					"type": "number",
+					"default": 30,
+					"description": "The maximum number of nested directories to scan."
+				},
+				"scss.scannerExclude": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"**/.git",
+						"**/node_modules",
+						"**/bower_components"
+					],
+					"description": "List of Glob-patterns for directories that are excluded when scanning."
+				},
+				"scss.scanImportedFiles": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allows scan imported files."
+				},
+				"scss.scanImportedFilesDepth": {
+					"type": "number",
+					"default": 50,
+					"description": "The maximum number of imported files to scan."
+				},
+				"scss.implicitlyLabel": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": "(implicitly)",
+					"description": "The text of a label that the file imported implicitly. If `null` then label not displayed."
+				},
+				"scss.showErrors": {
+					"type": "boolean",
+					"default": false,
+					"description": "Allows to display errors."
+				},
+				"scss.suggestVariables": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allows prompt Variables."
+				},
+				"scss.suggestMixins": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allows prompt Mixins."
+				},
+				"scss.suggestFunctions": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allows prompt Functions."
+				},
+				"scss.suggestFunctionsInStringContextAfterSymbols": {
+					"type": "string",
+					"default": " (+-*%",
+					"description": "Allows prompt Functions in String context after specified symbols."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"@types/micromatch": "^2.3.29",
+		"@types/mocha": "^2.2.39",
+		"@types/node": "^7.0.5",
+		"@types/parse-glob": "^3.0.29",
+		"mocha": "^3.2.0",
+		"rimraf": "^2.6.1",
+		"tslint": "^4.5.1",
+		"tslint-config-xo": "^1.1.0",
+		"typescript": "^2.2.1",
+		"vscode": "^1.0.5"
+	},
+	"dependencies": {
+		"vscode-languageclient": "3.1.0",
+		"vscode-languageserver": "3.1.0",
+		"vscode-css-languageservice": "2.0.0",
+		"vscode-uri": "1.0.0",
+		"readdir-enhanced": "1.4.5",
+		"micromatch": "2.3.11",
+		"scss-symbols-parser": "1.1.1"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"clean": "rimraf out",
+		"lint": "tslint src/**/*.ts",
+		"compile": "tsc",
+		"test": "mocha out/**/*.spec.js",
+		"build": "npm run clean && npm run lint && npm run compile && npm test",
+		"watch": "npm run clean && npm run lint && npm run compile -- --watch"
+	},
+	"__metadata": {
+		"id": "beb68b20-7c55-471c-9b63-3486f9423566",
+		"publisherId": "c958976e-9702-4f1a-8bdf-26b7bc012d65",
+		"publisherDisplayName": "mrmlnc"
+	}
+}

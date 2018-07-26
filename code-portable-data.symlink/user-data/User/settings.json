@@ -1,0 +1,41 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontFamily": "Hack, monospace",
+    "editor.minimap.enabled": false,
+    "git.autofetch": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "materialTheme.fixIconsRunning": false,
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#00BCD4",
+        "list.activeSelectionForeground": "#00BCD4",
+        "list.inactiveSelectionForeground": "#00BCD4",
+        "list.highlightForeground": "#00BCD4",
+        "scrollbarSlider.activeBackground": "#00BCD450",
+        "editorSuggestWidget.highlightForeground": "#00BCD4",
+        "textLink.foreground": "#00BCD4",
+        "progressBar.background": "#00BCD4",
+        "pickerGroup.foreground": "#00BCD4",
+        "tab.activeBorder": "#00BCD4",
+        "notificationLink.foreground": "#00BCD4",
+        "editor.findWidgetResizeBorder": "#00BCD4",
+        "editorWidget.border": "#00BCD4"
+    },
+    "materialTheme.accentPrevious": "",
+    "materialTheme.accent": "Cyan",
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "scssLint.statusBarText": "",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+}
