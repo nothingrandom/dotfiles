@@ -29,7 +29,6 @@ brew 'legit'
 
 cask 'dropbox'
 cask '1password'
-cask 'atom'
 cask 'firefox'
 cask 'google-chrome'
 cask 'transmission'
