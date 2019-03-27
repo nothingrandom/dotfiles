@@ -2,6 +2,7 @@
     "editor.tabSize": 2,
     "editor.fontFamily": "Hack, monospace",
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
     "git.autofetch": true,
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
@@ -10,7 +11,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "workbench.colorTheme": "Material Theme Darker High Contrast",
     "materialTheme.fixIconsRunning": false,
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#00BCD4",
         "list.activeSelectionForeground": "#00BCD4",
@@ -24,7 +25,14 @@
         "tab.activeBorder": "#00BCD4",
         "notificationLink.foreground": "#00BCD4",
         "editor.findWidgetResizeBorder": "#00BCD4",
-        "editorWidget.border": "#00BCD4"
+        "editorWidget.border": "#00BCD4",
+        "editorWidget.resizeBorder": "#00BCD4",
+        "settings.modifiedItemIndicator": "#00BCD4",
+        "settings.headerForeground": "#00BCD4",
+        "panelTitle.activeBorder": "#00BCD4",
+        "breadcrumb.activeSelectionForeground": "#00BCD4",
+        "menu.selectionForeground": "#00BCD4",
+        "menubar.selectionForeground": "#00BCD4"
     },
     "materialTheme.accentPrevious": "",
     "materialTheme.accent": "Cyan",
@@ -38,4 +46,8 @@
         "javascriptreact",
         "vue"
     ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "git.confirmSync": false,
 }
