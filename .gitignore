@@ -9,4 +9,7 @@ atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
 
+code-portable-data.symlink/user-data/Cache
+code-portable-data.symlink/user-data/CachedData
+
 git/gitconfig.local.symlink

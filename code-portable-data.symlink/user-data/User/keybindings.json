@@ -1,0 +1,4 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  { "key": "cmd+k", "command": "workbench.action.quickOpen" },
+]
