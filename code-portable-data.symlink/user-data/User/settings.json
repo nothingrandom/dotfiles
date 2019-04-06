@@ -46,6 +46,7 @@
         "javascriptreact",
         "vue"
     ],
+    "eslint.packageManager": "yarn",
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,

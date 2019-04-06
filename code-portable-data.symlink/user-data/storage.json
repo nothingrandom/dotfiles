@@ -3,20 +3,25 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
-            "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
             "file:///Users/benjamin/Documents/Git/styleguide",
-            "file:///Users/benjamin/Documents/Git/new-web",
-            "file:///Users/benjamin/Documents/Git",
             {
                 "id": "248d3831cb045f887e6216cfab5d35af",
                 "configURIPath": "file:///Users/benjamin/Desktop/web.code-workspace"
             },
-            "file:///Users/benjamin/Documents/Git/new-web/src/stylesheets/components",
+            {
+                "id": "4cad70f66ab96b90d7721c4336f10e0d",
+                "configURIPath": "file:///Users/benjamin/Desktop/web-new.code-workspace"
+            },
+            "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
+            "file:///Users/benjamin/Documents/Git/ms-code",
+            "file:///Users/benjamin/Documents/Git",
             "file:///Users/benjamin/Documents/Git/hiber-website",
+            "file:///Users/benjamin/Documents/Git/new-web",
+            "file:///Users/benjamin/Documents/Git/docs",
+            "file:///Users/benjamin/Documents/Git/new-web/src/stylesheets/components",
             "file:///Users/benjamin/Documents/Git/grpc-test-project",
             "file:///Users/benjamin/Documents/Git/ms-code/grpc-web-example",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/deploy",
-            "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/Documents/Git/ms-code/backend",
             "file:///Users/benjamin/Documents/Git/hiber-website/store",
             "file:///",
@@ -28,6 +33,8 @@
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/internal/proto"
         ],
         "files2": [
+            "file:///Users/benjamin/Desktop/sat.svg",
+            "file:///Users/benjamin/Documents/Git/new-web/index.html",
             "file:///Users/benjamin/.dotfiles/git/aliases.zsh",
             "file:///Users/benjamin/Downloads/Staff%20Hiber%20%20-%20Blad1.csv",
             "file:///Users/benjamin/Downloads/creativefund.hiber.global/css/app.scss",
@@ -39,11 +46,10 @@
     "theme": "vs-dark",
     "themeBackground": "#212121",
     "windowsState": {
-        "openedWindows": [],
         "lastActiveWindow": {
-            "workspace": {
+            "workspaceIdentifier": {
                 "id": "248d3831cb045f887e6216cfab5d35af",
-                "configPath": "/Users/benjamin/Desktop/web.code-workspace"
+                "configURIPath": "file:///Users/benjamin/Desktop/web.code-workspace"
             },
             "backupPath": "/Applications/code-portable-data/user-data/Backups/248d3831cb045f887e6216cfab5d35af",
             "uiState": {
@@ -53,7 +59,8 @@
                 "width": 1280,
                 "height": 1417
             }
-        }
+        },
+        "openedWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -91,11 +98,32 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "fsPath": "/Users/benjamin/.dotfiles",
+                                        "external": "file:///Users/benjamin/.dotfiles",
+                                        "path": "/Users/benjamin/.dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
+                                        "path": "/Users/benjamin/Documents/Git/styleguide",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/styleguide"
+                                },
+                                {
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/benjamin/Desktop/web.code-workspace",
-                                        "external": "file:///Users/benjamin/Desktop/web.code-workspace",
                                         "path": "/Users/benjamin/Desktop/web.code-workspace",
                                         "scheme": "file"
                                     },
@@ -103,15 +131,14 @@
                                     "label": "~/Desktop/web (Workspace)"
                                 },
                                 {
-                                    "id": "openRecentFolder",
+                                    "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dotfiles",
-                                        "path": "/Users/benjamin/.dotfiles",
+                                        "path": "/Users/benjamin/Desktop/web-new.code-workspace",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.dotfiles"
+                                    "label": "~/Desktop/web-new (Workspace)"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -128,23 +155,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
-                                        "path": "/Users/benjamin/Documents/Git/styleguide",
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/styleguide"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/new-web",
-                                        "path": "/Users/benjamin/Documents/Git/new-web",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/new-web"
+                                    "label": "~/Documents/Git/ms-code"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -161,17 +177,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/new-web/src/stylesheets/components",
-                                        "path": "/Users/benjamin/Documents/Git/new-web/src/stylesheets/components",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/new-web/src/stylesheets/components"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/hiber-website",
                                         "path": "/Users/benjamin/Documents/Git/hiber-website",
                                         "scheme": "file"
@@ -183,26 +188,48 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/grpc-test-project",
-                                        "path": "/Users/benjamin/Documents/Git/grpc-test-project",
+                                        "external": "file:///Users/benjamin/Documents/Git/new-web",
+                                        "path": "/Users/benjamin/Documents/Git/new-web",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/grpc-test-project"
+                                    "label": "~/Documents/Git/new-web"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/grpc-web-example",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/grpc-web-example",
+                                        "external": "file:///Users/benjamin/Documents/Git/docs",
+                                        "path": "/Users/benjamin/Documents/Git/docs",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/grpc-web-example"
+                                    "label": "~/Documents/Git/docs"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Desktop/sat.svg",
+                                        "path": "/Users/benjamin/Desktop/sat.svg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/sat.svg"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/new-web/index.html",
+                                        "path": "/Users/benjamin/Documents/Git/new-web/index.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/new-web/index.html"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -333,7 +360,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -696,7 +723,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
