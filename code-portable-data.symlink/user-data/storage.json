@@ -3,6 +3,9 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
+            "file:///Users/benjamin/Documents/Git/ms-code",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
             "file:///Users/benjamin/Documents/Git/styleguide",
             {
                 "id": "248d3831cb045f887e6216cfab5d35af",
@@ -12,8 +15,6 @@
                 "id": "4cad70f66ab96b90d7721c4336f10e0d",
                 "configURIPath": "file:///Users/benjamin/Desktop/web-new.code-workspace"
             },
-            "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
-            "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/Documents/Git",
             "file:///Users/benjamin/Documents/Git/hiber-website",
             "file:///Users/benjamin/Documents/Git/new-web",
@@ -47,17 +48,14 @@
     "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "248d3831cb045f887e6216cfab5d35af",
-                "configURIPath": "file:///Users/benjamin/Desktop/web.code-workspace"
-            },
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/248d3831cb045f887e6216cfab5d35af",
+            "folder": "file:///Users/benjamin/.dotfiles",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
             "uiState": {
                 "mode": 1,
-                "x": 1150,
-                "y": -1417,
-                "width": 1280,
-                "height": 1417
+                "x": -130,
+                "y": -1027,
+                "width": 1680,
+                "height": 1027
             }
         },
         "openedWindows": []
@@ -113,6 +111,39 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/mission-control",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/mission-control"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/styleguide",
                                         "path": "/Users/benjamin/Documents/Git/styleguide",
                                         "scheme": "file"
@@ -139,28 +170,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/web-new (Workspace)"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/mission-control",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/mission-control"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -194,17 +203,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/new-web"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/docs",
-                                        "path": "/Users/benjamin/Documents/Git/docs",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/docs"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1204,8 +1202,8 @@
                 "userSettingsLabel": "cmd+w"
             },
             "workbench.action.closeWindow": {
-                "label": "Shift+Cmd+W",
-                "userSettingsLabel": "shift+cmd+w"
+                "label": "Cmd+W",
+                "userSettingsLabel": "cmd+w"
             },
             "undo": {
                 "label": "Cmd+Z",
