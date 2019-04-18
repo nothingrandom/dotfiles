@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="gitlens" Version="9.6.0" Publisher="eamodio"/>
+    <Identity Language="en-US" Id="gitlens" Version="9.6.2" Publisher="eamodio"/>
     <DisplayName>GitLens — Git supercharged</DisplayName>
     <Description xml:space="preserve">Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more</Description>
     <Tags>gitlens,git,blame,log,annotation,multi-root ready,keybindings</Tags>
