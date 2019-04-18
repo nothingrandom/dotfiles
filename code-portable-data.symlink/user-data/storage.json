@@ -3,6 +3,7 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
+            "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
             "file:///Users/benjamin/Documents/Git/barebonesio",
             {
@@ -53,13 +54,13 @@
     "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
+            "folder": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/260cf728c90183dd1840a6d6edb20def",
             "uiState": {
                 "mode": 1,
-                "x": 1150,
+                "x": -130,
                 "y": -1417,
-                "width": 1280,
+                "width": 2560,
                 "height": 1417
             }
         },
@@ -76,14 +77,25 @@
                 }
             },
             {
-                "folder": "file:///Users/benjamin/Documents/Git/styleguide",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/58b74b6d3862052b202a2418aaf95baa",
+                "folder": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/260cf728c90183dd1840a6d6edb20def",
                 "uiState": {
                     "mode": 1,
-                    "x": 1150,
-                    "y": 0,
-                    "width": 1280,
-                    "height": 1050
+                    "x": -130,
+                    "y": -1417,
+                    "width": 2560,
+                    "height": 1417
+                }
+            },
+            {
+                "folder": "file:///Users/benjamin/.dotfiles",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
+                "uiState": {
+                    "mode": 1,
+                    "x": -130,
+                    "y": -1417,
+                    "width": 2560,
+                    "height": 1417
                 }
             }
         ]
@@ -134,6 +146,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+                                        "path": "/Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/slack-sheets-cleaning-webhook"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -221,17 +244,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/frasco"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -772,8 +784,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
