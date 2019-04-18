@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [9.6.2] - 2019-04-017
+
+### Fixed
+
+- Fixes [#718](https://github.com/eamodio/vscode-gitlens/issues/718) - Can't see changed files when comparing branches
+
+## [9.6.1] - 2019-04-017
+
+### Added
+
+- Adds a _Checkout_ command to file nodes in the views to replace the local file with the specified revision &mdash; closes [#684](https://github.com/eamodio/vscode-gitlens/issues/684)
+- Adds a prompt to enable the view to the _Show \* View_ commands when the specified view is disabled &mdash; closes [#710](https://github.com/eamodio/vscode-gitlens/issues/710) & [#711](https://github.com/eamodio/vscode-gitlens/issues/711)
+
+### Removed
+
+- Removes `-m` flag from `git log` when following renames (`--follow`), because it returns **all** merge commits, whether the file was changed or not
+
+### Fixed
+
+- Fixes [#701](https://github.com/eamodio/vscode-gitlens/issues/701) - Contributors shows no commits for mailmapped committer name
+- Fixes issues with the _Line History_ view sometimes showing a duplicate and out of order commit
+- Fixes broken _Open File_ command on the root node of the _File History_ and _Line History_ views
+- Fixes broken _Open Revision_ command on status files of the _Repositories_ view
+
 ## [9.6.0] - 2019-04-08
 
 ### Added
@@ -2740,6 +2764,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release but still heavily a work in progress.
 
+[9.6.2]: https://github.com/eamodio/vscode-gitlens/compare/v9.6.1...eamodio:v9.6.2
+[9.6.1]: https://github.com/eamodio/vscode-gitlens/compare/v9.6.0...eamodio:v9.6.1
 [9.6.0]: https://github.com/eamodio/vscode-gitlens/compare/v9.5.1...eamodio:v9.6.0
 [9.5.1]: https://github.com/eamodio/vscode-gitlens/compare/v9.5.0...eamodio:v9.5.1
 [9.5.0]: https://github.com/eamodio/vscode-gitlens/compare/v9.4.1...eamodio:v9.5.0

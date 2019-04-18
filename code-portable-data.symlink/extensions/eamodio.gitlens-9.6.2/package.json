@@ -2,7 +2,7 @@
 	"name": "gitlens",
 	"displayName": "GitLens — Git supercharged",
 	"description": "Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more",
-	"version": "9.6.0",
+	"version": "9.6.2",
 	"author": {
 		"name": "Eric Amodio",
 		"email": "eamodio@gmail.com"
@@ -4320,19 +4320,29 @@
 					"group": "5_gitlens_1@1"
 				},
 				{
+					"command": "gitlens.views.checkout",
+					"when": "viewItem =~ /gitlens:file:(commit|results)\\b/",
+					"group": "5_gitlens_1@2"
+				},
+				{
 					"command": "gitlens.views.applyChanges",
 					"when": "!gitlens:readonly && viewItem == gitlens:file:stash",
 					"group": "1_gitlens@1"
 				},
 				{
+					"command": "gitlens.views.checkout",
+					"when": "!gitlens:readonly && viewItem == gitlens:file:stash",
+					"group": "1_gitlens@2"
+				},
+				{
 					"command": "gitlens.showQuickCommitDetails",
 					"when": "viewItem =~ /gitlens:file\\b(?!(:stash|:status))/",
-					"group": "5_gitlens_2@2"
+					"group": "5_gitlens_2@1"
 				},
 				{
 					"command": "gitlens.showCommitInView",
 					"when": "viewItem =~ /gitlens:file\\b(?!(:stash|:status))/",
-					"group": "5_gitlens_2@3"
+					"group": "5_gitlens_2@2"
 				},
 				{
 					"command": "gitlens.showQuickFileHistory",
@@ -5002,25 +5012,25 @@
 		"eslint-cli": "1.1.1",
 		"eslint-config-prettier": "4.1.0",
 		"eslint-loader": "2.1.2",
-		"eslint-plugin-import": "2.16.0",
+		"eslint-plugin-import": "2.17.1",
 		"eslint-plugin-prettiest": "0.0.1",
 		"html-webpack-exclude-assets-plugin": "0.0.7",
 		"html-webpack-inline-source-plugin": "0.0.10",
 		"html-webpack-plugin": "3.2.0",
 		"imagemin-webpack-plugin": "2.4.2",
-		"mini-css-extract-plugin": "0.5.0",
+		"mini-css-extract-plugin": "0.6.0",
 		"node-sass": "4.11.0",
-		"prettier": "1.16.4",
+		"prettier": "1.17.0",
 		"prettier-eslint": "8.8.2",
 		"sass-loader": "7.1.0",
 		"terser-webpack-plugin": "1.2.3",
 		"ts-loader": "5.3.3",
-		"typescript": "3.4.2",
+		"typescript": "3.4.3",
 		"vsce": "1.59.0",
 		"vscode": "1.1.33",
-		"webpack": "4.29.6",
+		"webpack": "4.30.0",
 		"webpack-cli": "3.3.0",
-		"webpack-bundle-analyzer": "3.1.0"
+		"webpack-bundle-analyzer": "3.3.2"
 	},
 	"__metadata": {
 		"id": "4de763bd-505d-4978-9575-2b7696ecf94e",

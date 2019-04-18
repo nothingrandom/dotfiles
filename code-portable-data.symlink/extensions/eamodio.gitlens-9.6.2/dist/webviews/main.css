@@ -367,6 +367,7 @@ ul {
 .changelog__details--list {
   flex-direction: column; }
   .changelog__details--list p {
+    align-self: flex-start;
     margin-bottom: 0; }
   .changelog__details--list p:last-child {
     margin-bottom: 1em; }
