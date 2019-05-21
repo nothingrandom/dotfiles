@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Shortens a url using the 0random.co repo and https://github.com/kentcdodds/netlify-shortener
+
+node /Users/benjamin/Documents/Git/0random.co/node_modules/.bin/netlify-shortener "$1" "$2";
