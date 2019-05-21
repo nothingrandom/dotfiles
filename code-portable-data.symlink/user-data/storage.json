@@ -3,19 +3,27 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
-            "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+            "file:///Users/benjamin/Documents/Git/0random.co",
+            "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "file:///Users/benjamin/Documents/Git/barebonesio",
+            "file:///Users/benjamin/Documents/Git/mxb",
+            "file:///Users/benjamin/Documents/Git/hiber-website",
+            "file:///Users/benjamin/Documents/Git/sales-scripts",
+            "file:///Users/benjamin/Documents/Git/ms-code",
+            "file:///Users/benjamin/Documents/Git/eleventy",
+            "file:///Users/benjamin/Documents/Git/deploy-scripts",
+            "file:///Users/benjamin/Documents/Git/styleguide",
+            "file:///Users/benjamin/Documents/Git/specs",
             {
                 "id": "248d3831cb045f887e6216cfab5d35af",
                 "configURIPath": "file:///Users/benjamin/Desktop/web.code-workspace"
             },
-            "file:///Users/benjamin/Documents/Git/hiber-website",
             "file:///Users/benjamin/Documents/Git/hiber-website/specs-test-don-t-access",
-            "file:///Users/benjamin/Documents/Git/website",
-            "file:///Users/benjamin/Documents/Git/styleguide",
+            "file:///Users/benjamin/Documents/Git/danparceleventy",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
+            "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+            "file:///Users/benjamin/Documents/Git/barebonesio",
             "file:///Users/benjamin/Documents/Git/frasco",
-            "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
             {
                 "id": "4cad70f66ab96b90d7721c4336f10e0d",
@@ -38,6 +46,8 @@
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/internal/proto"
         ],
         "files2": [
+            "file:///Users/benjamin/.Trash/example-post.md",
+            "file:///Users/benjamin/Downloads/favicon_io/site.webmanifest",
             "file:///Users/benjamin/Documents/Git/styleguide/%2C",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/%2C",
             "file:///Users/benjamin/Desktop/sat.svg",
@@ -54,51 +64,17 @@
     "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/260cf728c90183dd1840a6d6edb20def",
+            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
             "uiState": {
                 "mode": 1,
-                "x": -130,
+                "x": 1150,
                 "y": -1417,
-                "width": 2560,
+                "width": 1280,
                 "height": 1417
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
-                "uiState": {
-                    "mode": 1,
-                    "x": 1150,
-                    "y": -1417,
-                    "width": 1280,
-                    "height": 1417
-                }
-            },
-            {
-                "folder": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/260cf728c90183dd1840a6d6edb20def",
-                "uiState": {
-                    "mode": 1,
-                    "x": -130,
-                    "y": -1417,
-                    "width": 2560,
-                    "height": 1417
-                }
-            },
-            {
-                "folder": "file:///Users/benjamin/.dotfiles",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
-                "uiState": {
-                    "mode": 1,
-                    "x": -130,
-                    "y": -1417,
-                    "width": 2560,
-                    "height": 1417
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -151,66 +127,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
-                                        "path": "/Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
+                                        "external": "file:///Users/benjamin/Documents/Git/0random.co",
+                                        "path": "/Users/benjamin/Documents/Git/0random.co",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/slack-sheets-cleaning-webhook"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/barebonesio",
-                                        "path": "/Users/benjamin/Documents/Git/barebonesio",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/barebonesio"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/Users/benjamin/Desktop/web.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/web (Workspace)"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/hiber-website",
-                                        "path": "/Users/benjamin/Documents/Git/hiber-website",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/hiber-website"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/hiber-website/specs-test-don-t-access",
-                                        "path": "/Users/benjamin/Documents/Git/hiber-website/specs-test-don-t-access",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/hiber-website/specs-test-don-t-access"
+                                    "label": "~/Documents/Git/0random.co"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -227,26 +149,103 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
-                                        "path": "/Users/benjamin/Documents/Git/styleguide",
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/styleguide"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/frasco",
-                                        "path": "/Users/benjamin/Documents/Git/frasco",
+                                        "external": "file:///Users/benjamin/Documents/Git/mxb",
+                                        "path": "/Users/benjamin/Documents/Git/mxb",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/frasco"
+                                    "label": "~/Documents/Git/mxb"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/hiber-website",
+                                        "path": "/Users/benjamin/Documents/Git/hiber-website",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/hiber-website"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/sales-scripts",
+                                        "path": "/Users/benjamin/Documents/Git/sales-scripts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/sales-scripts"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/eleventy",
+                                        "path": "/Users/benjamin/Documents/Git/eleventy",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/eleventy"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/deploy-scripts",
+                                        "path": "/Users/benjamin/Documents/Git/deploy-scripts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/deploy-scripts"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/.Trash/example-post.md",
+                                        "path": "/Users/benjamin/.Trash/example-post.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.Trash/example-post.md"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Downloads/favicon_io/site.webmanifest",
+                                        "path": "/Users/benjamin/Downloads/favicon_io/site.webmanifest",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/favicon_io/site.webmanifest"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -335,28 +334,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Downloads/creativefund.hiber.global/index.html"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///~/Downloads/Makerfaire_logotype_02.svg",
-                                        "path": "/~/Downloads/Makerfaire_logotype_02.svg",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/~/Downloads/Makerfaire_logotype_02.svg"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///~/Downloads/Makerfair_logotype.svg",
-                                        "path": "/~/Downloads/Makerfair_logotype.svg",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/~/Downloads/Makerfair_logotype.svg"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
