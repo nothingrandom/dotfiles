@@ -3,16 +3,27 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
-            "file:///Users/benjamin/Documents/Git/0random.co",
             "file:///Users/benjamin/Documents/Git/website",
+            "file:///Users/benjamin/Documents/Git/homepage",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "file:///Users/benjamin/Documents/Git/mxb",
+            "file:///Users/benjamin/Documents/Git/styleguide",
+            "file:///Users/benjamin/Documents/Git",
             "file:///Users/benjamin/Documents/Git/hiber-website",
+            "file:///Users/benjamin/Documents/Git/homepage/static/php-static",
             "file:///Users/benjamin/Documents/Git/sales-scripts",
             "file:///Users/benjamin/Documents/Git/ms-code",
+            "file:///Users/benjamin/Documents/Git/browser-reset",
+            "file:///Users/benjamin/Documents/Git/barebones",
+            "file:///Users/benjamin/Documents/Git/media-library",
+            "file:///Users/benjamin/Documents/Git/weather-app",
+            "file:///Users/benjamin/Documents/Git/0random.co",
+            "file:///Users/benjamin/Documents/Git/mxb",
+            "file:///Users/benjamin/Documents/Git/barebonesio",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend",
+            "file:///Users/benjamin/Documents/Git/social-regex",
+            "file:///Users/benjamin/Documents/Git/staticgen",
             "file:///Users/benjamin/Documents/Git/eleventy",
             "file:///Users/benjamin/Documents/Git/deploy-scripts",
-            "file:///Users/benjamin/Documents/Git/styleguide",
             "file:///Users/benjamin/Documents/Git/specs",
             {
                 "id": "248d3831cb045f887e6216cfab5d35af",
@@ -22,14 +33,12 @@
             "file:///Users/benjamin/Documents/Git/danparceleventy",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
             "file:///Users/benjamin/Documents/Git/slack-sheets-cleaning-webhook",
-            "file:///Users/benjamin/Documents/Git/barebonesio",
             "file:///Users/benjamin/Documents/Git/frasco",
             "file:///Users/benjamin/Documents/Git/ms-code/mission-control",
             {
                 "id": "4cad70f66ab96b90d7721c4336f10e0d",
                 "configURIPath": "file:///Users/benjamin/Desktop/web-new.code-workspace"
             },
-            "file:///Users/benjamin/Documents/Git",
             "file:///Users/benjamin/Documents/Git/new-web",
             "file:///Users/benjamin/Documents/Git/docs",
             "file:///Users/benjamin/Documents/Git/new-web/src/stylesheets/components",
@@ -46,13 +55,19 @@
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/internal/proto"
         ],
         "files2": [
+            "file:///Users/benjamin/Downloads/site.webmanifest",
+            "file:///Users/benjamin/Documents/Git/homepage/git",
+            "file:///Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_portait-black.svg",
+            "file:///Users/benjamin/.Trash/Europa-Bold-export/Europa-Bold.css",
+            "file:///Users/benjamin/.dotfiles/git/aliases.zsh",
+            "file:///Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_landscape-black.svg",
+            "file:///Users/benjamin/Downloads/deploy-5ce513a303edc100072b5f90/sw.js",
             "file:///Users/benjamin/.Trash/example-post.md",
             "file:///Users/benjamin/Downloads/favicon_io/site.webmanifest",
             "file:///Users/benjamin/Documents/Git/styleguide/%2C",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/%2C",
             "file:///Users/benjamin/Desktop/sat.svg",
             "file:///Users/benjamin/Documents/Git/new-web/index.html",
-            "file:///Users/benjamin/.dotfiles/git/aliases.zsh",
             "file:///Users/benjamin/Downloads/Staff%20Hiber%20%20-%20Blad1.csv",
             "file:///Users/benjamin/Downloads/creativefund.hiber.global/css/app.scss",
             "file:///Users/benjamin/Downloads/creativefund.hiber.global/index.html",
@@ -127,23 +142,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/0random.co",
-                                        "path": "/Users/benjamin/Documents/Git/0random.co",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/0random.co"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/website",
                                         "path": "/Users/benjamin/Documents/Git/website",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/website"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage",
+                                        "path": "/Users/benjamin/Documents/Git/homepage",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -160,12 +175,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/mxb",
-                                        "path": "/Users/benjamin/Documents/Git/mxb",
+                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
+                                        "path": "/Users/benjamin/Documents/Git/styleguide",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/mxb"
+                                    "label": "~/Documents/Git/styleguide"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git",
+                                        "path": "/Users/benjamin/Documents/Git",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -177,6 +203,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/hiber-website"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage/static/php-static",
+                                        "path": "/Users/benjamin/Documents/Git/homepage/static/php-static",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage/static/php-static"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -201,29 +238,84 @@
                                     "label": "~/Documents/Git/ms-code"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/eleventy",
-                                        "path": "/Users/benjamin/Documents/Git/eleventy",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/eleventy"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/deploy-scripts",
-                                        "path": "/Users/benjamin/Documents/Git/deploy-scripts",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/deploy-scripts"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Downloads/site.webmanifest",
+                                        "path": "/Users/benjamin/Downloads/site.webmanifest",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/site.webmanifest"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage/git",
+                                        "path": "/Users/benjamin/Documents/Git/homepage/git",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage/git"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_portait-black.svg",
+                                        "path": "/Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_portait-black.svg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_portait-black.svg"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/.Trash/Europa-Bold-export/Europa-Bold.css",
+                                        "path": "/Users/benjamin/.Trash/Europa-Bold-export/Europa-Bold.css",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.Trash/Europa-Bold-export/Europa-Bold.css"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/.dotfiles/git/aliases.zsh",
+                                        "path": "/Users/benjamin/.dotfiles/git/aliases.zsh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/git/aliases.zsh"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_landscape-black.svg",
+                                        "path": "/Users/benjamin/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_landscape-black.svg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage/src/assets/img/logos/Hiber_logo_landscape-black.svg"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Downloads/deploy-5ce513a303edc100072b5f90/sw.js",
+                                        "path": "/Users/benjamin/Downloads/deploy-5ce513a303edc100072b5f90/sw.js",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/deploy-5ce513a303edc100072b5f90/sw.js"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -257,83 +349,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/styleguide/,"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/%2C",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/,",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/,"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Desktop/sat.svg",
-                                        "path": "/Users/benjamin/Desktop/sat.svg",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/sat.svg"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/new-web/index.html",
-                                        "path": "/Users/benjamin/Documents/Git/new-web/index.html",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/new-web/index.html"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dotfiles/git/aliases.zsh",
-                                        "path": "/Users/benjamin/.dotfiles/git/aliases.zsh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/git/aliases.zsh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Downloads/Staff%20Hiber%20%20-%20Blad1.csv",
-                                        "path": "/Users/benjamin/Downloads/Staff Hiber  - Blad1.csv",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/Staff Hiber  - Blad1.csv"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Downloads/creativefund.hiber.global/css/app.scss",
-                                        "path": "/Users/benjamin/Downloads/creativefund.hiber.global/css/app.scss",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/creativefund.hiber.global/css/app.scss"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Downloads/creativefund.hiber.global/index.html",
-                                        "path": "/Users/benjamin/Downloads/creativefund.hiber.global/index.html",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/creativefund.hiber.global/index.html"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -744,7 +759,8 @@
                     },
                     {
                         "id": "breadcrumbs.toggle",
-                        "label": "Toggle &&Breadcrumbs"
+                        "label": "Toggle &&Breadcrumbs",
+                        "checked": true
                     }
                 ]
             },
@@ -1242,8 +1258,8 @@
                 "userSettingsLabel": "cmd+w"
             },
             "workbench.action.closeWindow": {
-                "label": "Cmd+W",
-                "userSettingsLabel": "cmd+w"
+                "label": "Shift+Cmd+W",
+                "userSettingsLabel": "shift+cmd+w"
             },
             "undo": {
                 "label": "Cmd+Z",
@@ -1569,5 +1585,6 @@
                 "userSettingsLabel": "cmd+,"
             }
         }
-    }
+    },
+    "macOSAppIconRefresh7": true
 }

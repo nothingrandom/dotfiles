@@ -52,4 +52,5 @@
     "gitlens.views.lineHistory.enabled": true,
     "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0,
 }
