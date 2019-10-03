@@ -12,5 +12,6 @@ atom.symlink/recovery
 code-portable-data.symlink/user-data/Cache
 code-portable-data.symlink/user-data/CachedData
 code-portable-data.symlink/user-data/workspaceStorage
+code-portable-data.symlink/user-data/User/workspaceStorage
 
 git/gitconfig.local.symlink
