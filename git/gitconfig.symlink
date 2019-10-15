@@ -6,8 +6,9 @@
 [alias]
         co = checkout
         wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        rank    = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+        tree    = log --oneline --decorate --all --graph
 [color]
         diff = auto
         status = auto
