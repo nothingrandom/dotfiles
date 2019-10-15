@@ -9,10 +9,8 @@ atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
 
-code-portable-data.symlink/user-data/Backups
-code-portable-data.symlink/user-data/Cache
-code-portable-data.symlink/user-data/CachedData
-code-portable-data.symlink/user-data/workspaceStorage
-code-portable-data.symlink/user-data/User/workspaceStorage
+/code-portable-data.symlink/user-data/*
+!/code-portable-data.symlink/user-data/User
+!/code-portable-data.symlink/user-data/Preferences
 
 git/gitconfig.local.symlink
