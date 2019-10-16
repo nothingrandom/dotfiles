@@ -27,6 +27,7 @@ brew 'yarn'
 brew 'youtube-dl'
 brew 'legit'
 brew 'htop'
+brew 'tldr'
 
 cask 'visual-studio-code'
 cask 'dropbox'
