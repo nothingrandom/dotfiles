@@ -8,7 +8,6 @@
         wtf     = !$ZSH/bin/git-wtf
         rank    = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
-        tree    = log --oneline --decorate --all --graph
         new     = checkout -b
 [color]
         diff = auto
