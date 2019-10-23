@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Fixes your working tree for a .gitignore change
+
+git rm -r --cached . && git add . && git commit -m ".gitignore fix"
