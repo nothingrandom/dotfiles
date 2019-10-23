@@ -11,6 +11,7 @@ atom.symlink/recovery
 
 /code-portable-data.symlink/user-data/*
 !/code-portable-data.symlink/user-data/User
+/code-portable-data.symlink/extensions
 /code-portable-data.symlink/user-data/User/globalStorage
 /code-portable-data.symlink/user-data/User/workspaceStorage
 !/code-portable-data.symlink/user-data/Preferences
