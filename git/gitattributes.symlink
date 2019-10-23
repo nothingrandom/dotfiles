@@ -1,0 +1,12 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+###############################
+#        spaceman-diff        #
+###############################
+# Set images to be `git-diff`ed by `spaceman-diff` instead
+*.png   diff=spaceman-diff
+*.jpg   diff=spaceman-diff
+*.jpeg  diff=spaceman-diff
+*.gif   diff=spaceman-diff
+*.ico   diff=spaceman-diff

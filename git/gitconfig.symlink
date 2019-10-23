@@ -17,10 +17,14 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+	autocrlf = input
+	attributesfile = /Users/benjamin/.gitattributes
 [apply]
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+[diff "spaceman-diff"]
+        command = spaceman-diff
 [difftool]
         prompt = false
 [help]

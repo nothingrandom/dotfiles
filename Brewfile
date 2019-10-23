@@ -26,6 +26,7 @@ brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
 brew 'legit'
+brew 'git-lfs'
 brew 'htop'
 brew 'tldr'
 
