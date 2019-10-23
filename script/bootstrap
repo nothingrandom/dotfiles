@@ -129,6 +129,23 @@ link_file () {
   fi
 }
 
+link_config () {
+  if [ ! -d $HOME/.config ]; then
+    info "Creating ~/.config"
+    mkdir -p $HOME/.config
+  fi
+  # configs=$( find -path "$DOTFILES/config.symlink" -maxdepth 1 )
+  for config in $DOTFILES_ROOT/config/*; do
+      target=$HOME/.config/$( basename $config )
+      if [ -e $target ]; then
+          success "~${target#$HOME} already exists... Skipping."
+      else
+          success "Creating symlink for $config"
+          ln -s $config $target
+      fi
+  done
+}
+
 install_dotfiles () {
   info 'installing dotfiles'
 
@@ -142,6 +159,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+link_config
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
