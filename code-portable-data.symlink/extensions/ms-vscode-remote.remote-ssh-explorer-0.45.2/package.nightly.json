@@ -1,8 +1,0 @@
-{
-	"name": "remote-ssh-explorer-nightly",
-	"displayName": "Remote - SSH: Explorer (Nightly)",
-	"icon": "resources/remote-ssh-nightly.png",
-	"extensionDependencies": [
-		"ms-vscode-remote.remote-ssh-nightly"
-	]
-}
