@@ -1,0 +1,211 @@
+{
+	"name": "vscode-sshfs",
+	"displayName": "SSH FS",
+	"description": "File system provider using SSH",
+	"publisher": "Kelvin",
+	"version": "1.16.3",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onFileSystem:ssh",
+		"onFileSystemAccess:ssh",
+		"onView:sshfs-configs",
+		"onCommand:sshfs.new",
+		"onCommand:sshfs.connect",
+		"onCommand:sshfs.reconnect",
+		"onCommand:sshfs.disconnect",
+		"onCommand:sshfs.configure",
+		"onCommand:sshfs.reload",
+		"onCommand:sshfs.settings"
+	],
+	"main": "./dist/extension.js",
+	"author": {
+		"name": "Kelvin Schoofs",
+		"email": "schoofs.kelvin@gmail.com",
+		"url": "https://github.com/SchoofsKelvin"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SchoofsKelvin/vscode-sshfs"
+	},
+	"bugs": {
+		"url": "https://github.com/SchoofsKelvin/vscode-sshfs/issues"
+	},
+	"license": "GLP-3.0",
+	"icon": "resources/Logo.png",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"id": "sshfs-configs",
+					"name": "SSH File Systems"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "sshfs.new",
+				"title": "Create a SSH FS configuration",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.connect",
+				"title": "Connect as Workspace folder",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.reconnect",
+				"title": "Reconnect Workspace folder",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.disconnect",
+				"title": "Disconnect Workspace folder",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.configure",
+				"title": "Edit configuration",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.reload",
+				"title": "Reload configurations",
+				"category": "SSH FS"
+			},
+			{
+				"command": "sshfs.settings",
+				"title": "Open settings and edit configurations",
+				"category": "SSH FS"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "sshfs.new",
+					"group": "SSH FS@1"
+				},
+				{
+					"command": "sshfs.connect",
+					"group": "SSH FS@2"
+				},
+				{
+					"command": "sshfs.reconnect",
+					"group": "SSH FS@3"
+				},
+				{
+					"command": "sshfs.disconnect",
+					"group": "SSH FS@4"
+				},
+				{
+					"command": "sshfs.configure",
+					"group": "SSH FS@5"
+				},
+				{
+					"command": "sshfs.reload",
+					"group": "SSH FS@6"
+				},
+				{
+					"command": "sshfs.settings",
+					"group": "SSH FS@7"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "sshfs.new",
+					"when": "view == 'sshfs-configs' && !viewItem",
+					"group": "SSH FS@1"
+				},
+				{
+					"command": "sshfs.connect",
+					"when": "view == 'sshfs-configs' && viewItem == inactive",
+					"group": "SSH FS@2"
+				},
+				{
+					"command": "sshfs.reconnect",
+					"when": "view == 'sshfs-configs' && viewItem == active",
+					"group": "SSH FS@3"
+				},
+				{
+					"command": "sshfs.disconnect",
+					"when": "view == 'sshfs-configs' && viewItem == active",
+					"group": "SSH FS@4"
+				},
+				{
+					"command": "sshfs.configure",
+					"when": "view == 'sshfs-configs' && viewItem",
+					"group": "SSH FS@5"
+				},
+				{
+					"command": "sshfs.settings",
+					"when": "view == 'sshfs-configs' && !viewItem",
+					"group": "SSH FS@6"
+				}
+			]
+		},
+		"configuration": {
+			"title": "SSH FS Configuration",
+			"properties": {
+				"sshfs.configpaths": {
+					"title": "A list of file locations to load SSH FS configurations from",
+					"description": "Location of JSON files to load configs from",
+					"type": "array",
+					"items": "string",
+					"default": []
+				},
+				"sshfs.configs": {
+					"title": "A list of SSH FS configurations",
+					"description": "Use the Settings UI to edit configurations (run command SSH FS: Open settings and edit configurations)",
+					"markdownDescription": "Use the Settings UI to edit configurations *(run command `SSH FS: Open settings and edit configurations`)*",
+					"type": "array",
+					"items": "object",
+					"default": [
+						{
+							"root": "/tmp",
+							"host": "localhost",
+							"port": 22,
+							"username": "root",
+							"password": "CorrectHorseBatteryStaple"
+						}
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run build && cd webview && npm run build",
+		"build": "webpack --mode production",
+		"compile": "webpack --mode none --info-verbosity verbose --display-modules",
+		"profile": "webpack --mode production --profile --json > stats.json",
+		"watch": "webpack --mode none --watch --info-verbosity verbose --display-modules"
+	},
+	"devDependencies": {
+		"@types/node": "^8.10.43",
+		"@types/request": "^2.48.1",
+		"@types/ssh2": "^0.5.35",
+		"@types/webpack": "^4.4.25",
+		"@types/winreg": "^1.2.30",
+		"clean-webpack-plugin": "^2.0.0",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.4.3",
+		"vscode": "^1.1.33",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.2.3"
+	},
+	"dependencies": {
+		"event-stream": "^3.3.4",
+		"jsonc-parser": "^2.0.0",
+		"socks": "^2.2.0",
+		"ssh2": "^0.8.2",
+		"winreg": "^1.2.4"
+	},
+	"__metadata": {
+		"id": "bb9fc30a-080a-40bc-a792-08cc4ed66bcd",
+		"publisherId": "99daae2c-131e-4e21-b763-9ebee4f2cdf8",
+		"publisherDisplayName": "Kelvin Schoofs"
+	}
+}

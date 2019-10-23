@@ -1,0 +1,107 @@
+{
+	"name": "dotfiles-syntax-highlighting",
+	"displayName": "Dotfiles Syntax Highlighting",
+	"version": "0.1.0",
+	"publisher": "dotiful",
+	"description": "Provides syntax highlighting for dotfiles",
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "assets/icon.png",
+	"galleryBanner": {
+		"color": "#333",
+		"theme": "dark"
+	},
+	"preview": true,
+	"bugs": {
+		"url": "https://github.com/dotiful/vscode-dotfiles-syntax/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dotiful/vscode-dotfiles-syntax"
+	},
+	"engines": {
+		"vscode": "*"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"contributes": {
+		"languages": [
+			{
+				"id": "shellscript",
+				"aliases": [
+					"Shell Script"
+				],
+				"extensions": [
+					"ackrc",
+					"aliases",
+					"antigen",
+					"bash_prompt",
+					"brew",
+					"cshrc",
+					"curlrc",
+					"dircolors",
+					"editorconfig",
+					"env",
+					"envrc",
+					"exports",
+					"extra",
+					"functions",
+					"git",
+					"gitattributes",
+					"gitconfig",
+					"gitignore",
+					"gitmodules",
+					"hushlogin",
+					"inputrc",
+					"jshintignore",
+					"npmignore",
+					"npmrc",
+					"osx",
+					"packages",
+					"path",
+					"pkginit",
+					"screenrc",
+					"symlink",
+					"wgetrc",
+					"xsessionrc",
+					"zpreztorc",
+					"zshrc.local"
+				],
+				"filenames": [
+					"symlink",
+					"zlogin",
+					"zlogout",
+					"zpreztorc",
+					"zprofile",
+					"zshenv",
+					"zshrc"
+				],
+				"firstLine": "^#\\s*compdef"
+			},
+			{
+				"id": "ruby",
+				"aliases": [
+					"Ruby",
+					"ruby"
+				],
+				"extensions": [
+					"gemrc"
+				]
+			}
+		]
+	},
+	"homepage": "https://github.com/dotiful/vscode-dotfiles-syntax/blob/master/README.md",
+	"scripts": {
+		"build-package": "vsce package",
+		"release": "release-it"
+	},
+	"devDependencies": {
+		"release-it": "^12.3.0",
+		"vsce": "^1.62.0"
+	},
+	"__metadata": {
+		"id": "ffc6f6b3-5082-40f2-9dbd-fe38971dcd41",
+		"publisherId": "022ac133-cce0-4214-8043-87f977fbda88",
+		"publisherDisplayName": "Art Dev"
+	}
+}
