@@ -1,6 +1,6 @@
 if test ! $(which scss_lint)
 then
-  # sudo gem install scss_lint
+  sudo gem install scss_lint
 fi
 
-yarn global install
+yarn install --cwd ~/.config/yarn/global
