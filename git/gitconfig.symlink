@@ -9,6 +9,7 @@
         rank    = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
         new     = checkout -b
+	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
 [color]
         diff = auto
         status = auto
@@ -25,6 +26,8 @@
         keepBackup = false
 [diff "spaceman-diff"]
         command = spaceman-diff
+[diff "image"]
+	command = git-diff-images
 [difftool]
         prompt = false
 [help]

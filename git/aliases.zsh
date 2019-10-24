@@ -17,6 +17,7 @@ alias glog='git log --graph --pretty=format:"%Cred%h%Creset %an: %s - %Creset %C
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+alias gdi='git diff-image'
 
 # Add diff lines one chunck at a time
 alias gap='git add -p'
@@ -30,6 +31,8 @@ alias gca='git commit -a -m'
 
 alias gsta='git stash save'
 alias gstp='git stash pop'
+
+alias grhh='git reset --hard HEAD'
 
 alias gnew='git new' # config alias
 alias gco='git checkout'
