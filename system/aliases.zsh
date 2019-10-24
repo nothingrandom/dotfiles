@@ -9,4 +9,4 @@ then
   alias la='gls -A --color'
 fi
 
-alias top="sudo vtop" # alias top and fix high sierra bug
+alias top="vtop" # alias / override top
