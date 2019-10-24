@@ -11,6 +11,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "mddir": "^1.1.1",
     "snyk": "^1.150.0",
+    "spoof": "^2.0.1",
     "vtop": "^0.6.1",
     "vue-cli": "^2.9.6",
     "vue-svgicon": "^2.1.2"
