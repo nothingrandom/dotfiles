@@ -5,8 +5,8 @@
 #        spaceman-diff        #
 ###############################
 # Set images to be `git-diff`ed by `spaceman-diff` instead
-*.png   diff=spaceman-diff
-*.jpg   diff=spaceman-diff
-*.jpeg  diff=spaceman-diff
-*.gif   diff=spaceman-diff
-*.ico   diff=spaceman-diff
+*.png   diff=image
+*.jpg   diff=image
+*.jpeg  diff=image
+*.gif   diff=image
+*.ico   diff=image
