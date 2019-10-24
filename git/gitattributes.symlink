@@ -2,7 +2,7 @@
 * text=auto
 
 ###############################
-#        spaceman-diff        #
+#       git-image-diff        #
 ###############################
 # Set images to be `git-diff`ed by `spaceman-diff` instead
 *.png   diff=image
