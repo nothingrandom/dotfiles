@@ -10,6 +10,11 @@
         count   = !git shortlog -sn
         new     = checkout -b
 	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
+	sync = !/usr/local/bin/legit sync
+	publish = !/usr/local/bin/legit publish
+	unpublish = !/usr/local/bin/legit unpublish
+	undo = !/usr/local/bin/legit undo
+	branches = !/usr/local/bin/legit branches
 [color]
         diff = auto
         status = auto
