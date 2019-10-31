@@ -11,9 +11,9 @@ atom.symlink/recovery
 
 /code-portable-data.symlink/user-data/*
 !/code-portable-data.symlink/user-data/User
-/code-portable-data.symlink/extensions
-/code-portable-data.symlink/user-data/User/globalStorage
 /code-portable-data.symlink/user-data/User/workspaceStorage
 !/code-portable-data.symlink/user-data/Preferences
+!/code-portable-data.symlink/user-data/storage.json
+!/code-portable-data.symlink/user-data/rapid_render.json
 
 git/gitconfig.local.symlink

@@ -1,0 +1,386 @@
+{
+	"name": "remote-ssh-explorer",
+	"displayName": "Remote - SSH: Explorer",
+	"description": "Provides an explorer for SSH remotes.",
+	"version": "0.45.2",
+	"preview": true,
+	"publisher": "ms-vscode-remote",
+	"icon": "resources/remote-ssh.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-remote-release.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-remote-release/issues"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"engines": {
+		"vscode": "^1.34.20"
+	},
+	"extensionKind": "ui",
+	"extensionDependencies": [
+		"ms-vscode-remote.remote-ssh"
+	],
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"remote development",
+		"remote",
+		"ssh"
+	],
+	"activationEvents": [
+		"onView:sshHosts"
+	],
+	"main": "./out/extension",
+	"enableProposedApi": true,
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "opensshremotesexplorer",
+					"title": "Remote-SSH",
+					"icon": "resources/ssh-explorer.svg"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Remote - SSH",
+			"properties": {
+				"remote.SSH.enableAzureIntegration": {
+					"type": "boolean",
+					"markdownDescription": "**Experimental**: Detect SSH connections that target Azure VMs in the SSH hosts explorer. Requires that you are logged in using the `Azure Account` extension.",
+					"default": false
+				},
+				"remote.SSH.enableHostsExplorer": {
+					"type": "boolean",
+					"markdownDescription": "Enable the SSH hosts explorer",
+					"default": true
+				}
+			}
+		},
+		"views": {
+			"opensshremotesexplorer": [
+				{
+					"id": "sshHosts",
+					"name": "Connections",
+					"when": "config.remote.SSH.enableHostsExplorer"
+				},
+				{
+					"id": "sshTunnels",
+					"name": "Forwarded Ports",
+					"when": "config.remote.SSH.enableHostsExplorer && remote.sshContext"
+				},
+				{
+					"id": "sshHelp",
+					"name": "Help and Feedback",
+					"when": "config.remote.SSH.enableHostsExplorer"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "opensshremotesexplorer.emptyWindowInNewWindow",
+				"title": "Connect to Host in New Window",
+				"icon": {
+					"light": "resources/light/empty-window.svg",
+					"dark": "resources/dark/empty-window.svg",
+					"highContrast": "resources/highContrast/empty-window.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.emptyWindowInCurrentWindow",
+				"title": "Connect to Host in Current Window"
+			},
+			{
+				"command": "opensshremotesexplorer.startManagedHost",
+				"title": "Start VM",
+				"icon": {
+					"light": "resources/light/vm-start.svg",
+					"dark": "resources/dark/vm-start.svg",
+					"highContrast": "resources/highContrast/vm-start.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.stopManagedHost",
+				"title": "Stop VM",
+				"icon": {
+					"light": "resources/light/vm-stop.svg",
+					"dark": "resources/dark/vm-stop.svg",
+					"highContrast": "resources/highContrast/vm-stop.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.reopenFolderInCurrentWindow",
+				"title": "Open on SSH Host in Current Window"
+			},
+			{
+				"command": "opensshremotesexplorer.reopenFolderInNewWindow",
+				"title": "Open on SSH Host in New Window",
+				"icon": {
+					"light": "resources/light/reopen-folder.svg",
+					"dark": "resources/dark/reopen-folder.svg",
+					"highContrast": "resources/highContrast/reopen-folder.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.deleteFolderHistoryItem",
+				"title": "Remove From Recent List",
+				"icon": {
+					"light": "resources/light/remove.svg",
+					"dark": "resources/dark/remove.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.refresh",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "opensshremotesexplorer.configure",
+				"title": "Configure",
+				"icon": {
+					"light": "resources/light/configure.svg",
+					"dark": "resources/dark/configure.svg"
+				}
+			},
+			{
+				"command": "sshTunnels.refreshTunnels",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "sshTunnels.createTunnel",
+				"title": "Create New Forward",
+				"icon": {
+					"light": "resources/light/plus.svg",
+					"dark": "resources/dark/plus.svg"
+				}
+			},
+			{
+				"command": "sshTunnels.destroyTunnel",
+				"title": "Stop Forwarding Port",
+				"icon": {
+					"light": "resources/light/remove.svg",
+					"dark": "resources/dark/remove.svg"
+				}
+			},
+			{
+				"command": "sshTunnels.copyLocalTunnelAddress",
+				"title": "Copy Address",
+				"icon": {
+					"light": "thirdparty/octicons/light/copy-link.svg",
+					"dark": "thirdparty/octicons/dark/copy-link.svg",
+					"highCoontrast": "thirdparty/octicons/highContrast/copy-link.svg"
+				}
+			},
+			{
+				"command": "sshTunnels.openLocalTunnelAddress",
+				"title": "Open in Browser"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "opensshremotesexplorer.emptyWindowInCurrentWindow",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.emptyWindowInNewWindow",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.startManagedHost",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.stopManagedHost",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.refresh",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.configure",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.reopenFolderInCurrentWindow",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.reopenFolderInNewWindow",
+					"when": "false"
+				},
+				{
+					"command": "opensshremotesexplorer.deleteFolderHistoryItem",
+					"when": "false"
+				},
+				{
+					"command": "sshTunnels.refreshTunnels",
+					"when": "false"
+				},
+				{
+					"command": "sshTunnels.createTunnel",
+					"when": "false"
+				},
+				{
+					"command": "sshTunnels.destroyTunnel",
+					"when": "false"
+				},
+				{
+					"command": "sshTunnels.copyLocalTunnelAddress",
+					"when": "false"
+				},
+				{
+					"command": "sshTunnels.openLocalTunnelAddress",
+					"when": "false"
+				}
+			],
+			"view/title": [
+				{
+					"command": "opensshremotesexplorer.configure",
+					"when": "view == sshHosts",
+					"group": "navigation"
+				},
+				{
+					"command": "opensshremotesexplorer.refresh",
+					"when": "view == sshHosts",
+					"group": "navigation"
+				},
+				{
+					"command": "sshTunnels.refreshTunnels",
+					"when": "view == sshTunnels",
+					"group": "navigation@2"
+				},
+				{
+					"command": "sshTunnels.createTunnel",
+					"when": "view == sshTunnels",
+					"group": "navigation@1"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "opensshremotesexplorer.emptyWindowInNewWindow",
+					"when": "viewItem =~ /^opensshremotesexplorer.host(.managed.running)?$/",
+					"group": "inline@1"
+				},
+				{
+					"command": "opensshremotesexplorer.emptyWindowInNewWindow",
+					"when": "viewItem =~ /^opensshremotesexplorer.host(.managed.running)?$/",
+					"group": "navigation@2"
+				},
+				{
+					"command": "opensshremotesexplorer.emptyWindowInCurrentWindow",
+					"when": "viewItem =~ /^opensshremotesexplorer.host(.managed.running)?$/",
+					"group": "navigation@1"
+				},
+				{
+					"command": "opensshremotesexplorer.startManagedHost",
+					"when": "viewItem == opensshremotesexplorer.host.managed.deallocated",
+					"group": "navigation@1"
+				},
+				{
+					"command": "opensshremotesexplorer.startManagedHost",
+					"when": "viewItem == opensshremotesexplorer.host.managed.deallocated",
+					"group": "inline@1"
+				},
+				{
+					"command": "opensshremotesexplorer.stopManagedHost",
+					"when": "viewItem == opensshremotesexplorer.host.managed.running",
+					"group": "navigation@3"
+				},
+				{
+					"command": "opensshremotesexplorer.reopenFolderInNewWindow",
+					"when": "viewItem == opensshremotesexplorer.folder.reachable",
+					"group": "inline@1"
+				},
+				{
+					"command": "opensshremotesexplorer.reopenFolderInNewWindow",
+					"when": "viewItem == opensshremotesexplorer.folder.reachable",
+					"group": "navigation@2"
+				},
+				{
+					"command": "opensshremotesexplorer.reopenFolderInCurrentWindow",
+					"when": "viewItem == opensshremotesexplorer.folder.reachable",
+					"group": "navigation@1"
+				},
+				{
+					"command": "opensshremotesexplorer.deleteFolderHistoryItem",
+					"when": "viewItem =~ /^opensshremotesexplorer.folder/",
+					"group": "navigation@3"
+				},
+				{
+					"command": "opensshremotesexplorer.deleteFolderHistoryItem",
+					"when": "viewItem =~ /^opensshremotesexplorer.folder/",
+					"group": "inline@2"
+				},
+				{
+					"command": "sshTunnels.openLocalTunnelAddress",
+					"when": "viewItem == sshTunnels.tunnel",
+					"group": "navigation@1"
+				},
+				{
+					"command": "sshTunnels.copyLocalTunnelAddress",
+					"when": "viewItem == sshTunnels.tunnel",
+					"group": "inline@1"
+				},
+				{
+					"command": "sshTunnels.copyLocalTunnelAddress",
+					"when": "viewItem == sshTunnels.tunnel",
+					"group": "navigation@2"
+				},
+				{
+					"command": "sshTunnels.destroyTunnel",
+					"when": "viewItem == sshTunnels.tunnel",
+					"group": "inline@2"
+				},
+				{
+					"command": "sshTunnels.destroyTunnel",
+					"when": "viewItem == sshTunnels.tunnel",
+					"group": "navigation@2"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode none",
+		"watch": "webpack --mode none --watch",
+		"package": "vsce package --yarn",
+		"lint": "tslint -p ."
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.26",
+		"@types/webpack": "^4.4.27",
+		"azure-arm-resource": "^2.0.0-preview",
+		"azure-arm-website": "^1.0.0-preview",
+		"copy-webpack-plugin": "^5.0.2",
+		"ms-rest-azure": "^2.2.3",
+		"ts-loader": "^5.3.3",
+		"tslint": "^5.15.0",
+		"tslint-webpack-plugin": "^2.0.4",
+		"typescript": "^3.4.2",
+		"vsce": "^1.59.0",
+		"vscode": "^1.1.33",
+		"vscode-nls-dev": "^3.2.6",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
+	},
+	"dependencies": {
+		"azure-arm-compute": "^9.1.0",
+		"azure-arm-network": "^12.0.0"
+	},
+	"__metadata": {
+		"id": "5d9b66c1-7da3-4004-8c92-2b0852ec0c9b",
+		"publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+		"publisherDisplayName": "Microsoft"
+	}
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="dotfiles-syntax-highlighting" Version="0.1.0" Publisher="dotiful"/>
+    <DisplayName>Dotfiles Syntax Highlighting</DisplayName>
+    <Description xml:space="preserve">Provides syntax highlighting for dotfiles</Description>
+    <Tags>shellscript,Shell Script,__ext_ackrc,__ext_aliases,__ext_antigen,__ext_bash_prompt,__ext_brew,__ext_cshrc,__ext_curlrc,__ext_dircolors,__ext_editorconfig,__ext_env,__ext_envrc,__ext_exports,__ext_extra,__ext_functions,__ext_git,__ext_gitattributes,__ext_gitconfig,__ext_gitignore,__ext_gitmodules,__ext_hushlogin,__ext_inputrc,__ext_jshintignore,__ext_npmignore,__ext_npmrc,__ext_osx,__ext_packages,__ext_path,__ext_pkginit,__ext_screenrc,__ext_symlink,__ext_wgetrc,__ext_xsessionrc,__ext_zpreztorc,__ext_zshrclocal,ruby,Ruby,__ext_gemrc</Tags>
+    <Categories>Programming Languages</Categories>
+    <GalleryFlags>Public Preview</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="*" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/dotiful/vscode-dotfiles-syntax" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/dotiful/vscode-dotfiles-syntax" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/dotiful/vscode-dotfiles-syntax" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/dotiful/vscode-dotfiles-syntax/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/dotiful/vscode-dotfiles-syntax/blob/master/README.md" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#333" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+    </Properties>
+    <License>extension/LICENSE.md</License>
+    <Icon>extension/assets/icon.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/assets/icon.png" Addressable="true" />
+  </Assets>
+</PackageManifest>
