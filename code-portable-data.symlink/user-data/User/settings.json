@@ -11,7 +11,6 @@
     "gitlens.hovers.currentLine.over": "line",
     "workbench.colorTheme": "Material Theme Darker High Contrast",
     "materialTheme.fixIconsRunning": false,
-    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#00BCD4",
         "list.activeSelectionForeground": "#00BCD4",
@@ -53,4 +52,5 @@
     "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
+    "workbench.iconTheme": "eq-material-theme-icons",
 }
