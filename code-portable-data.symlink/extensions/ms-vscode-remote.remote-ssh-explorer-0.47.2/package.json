@@ -1,0 +1,68 @@
+{
+	"name": "remote-ssh-explorer",
+	"displayName": "Remote - SSH: Explorer",
+	"description": "(Deprecated) Provides an explorer for SSH remotes.",
+	"version": "0.47.2",
+	"preview": true,
+	"publisher": "ms-vscode-remote",
+	"icon": "resources/remote-ssh.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-remote-release.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-remote-release/issues"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"extensionKind": "ui",
+	"extensionDependencies": [
+		"ms-vscode-remote.remote-ssh"
+	],
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"remote development",
+		"remote",
+		"ssh"
+	],
+	"activationEvents": [],
+	"main": "./out/extension",
+	"contributes": {},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode none",
+		"watch": "webpack --mode none --watch",
+		"package": "vsce package --yarn",
+		"lint": "tslint -p ."
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.26",
+		"@types/webpack": "^4.4.27",
+		"azure-arm-resource": "^2.0.0-preview",
+		"azure-arm-website": "^1.0.0-preview",
+		"copy-webpack-plugin": "^5.0.2",
+		"ms-rest-azure": "^2.2.3",
+		"ts-loader": "^5.3.3",
+		"tslint": "^5.15.0",
+		"tslint-webpack-plugin": "^2.0.4",
+		"typescript": "^3.4.2",
+		"vsce": "^1.59.0",
+		"vscode": "^1.1.33",
+		"vscode-nls-dev": "^3.2.6",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
+	},
+	"dependencies": {
+		"azure-arm-compute": "^9.1.0",
+		"azure-arm-network": "^12.0.0"
+	},
+	"__metadata": {
+		"id": "5d9b66c1-7da3-4004-8c92-2b0852ec0c9b",
+		"publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+		"publisherDisplayName": "Microsoft"
+	}
+}

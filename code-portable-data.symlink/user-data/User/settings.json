@@ -37,8 +37,6 @@
     "materialTheme.accent": "Cyan",
     "files.trimTrailingWhitespace": true,
     "workbench.startupEditor": "newUntitledFile",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
     "scssLint.statusBarText": "",
     "eslint.validate": [
         "javascript",
@@ -53,4 +51,8 @@
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
     "workbench.iconTheme": "eq-material-theme-icons",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
 }

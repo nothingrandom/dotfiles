@@ -3,6 +3,7 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
+            "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
             "file:///Users/benjamin/Documents/Git/homepage",
             "file:///Users/benjamin/Documents/Git/styleguide",
@@ -11,7 +12,6 @@
             "file:///Users/benjamin/Documents/Git/frontend-assignment",
             "file:///Users/benjamin/Documents/Git/js-assignments",
             "file:///Users/benjamin/Documents/Git/javascript-tests",
-            "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
             "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/.config",
@@ -166,17 +166,40 @@
     "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
+            "folder": "file:///Users/benjamin/Documents/Git/website",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
             "uiState": {
                 "mode": 1,
-                "x": 1150,
-                "y": -1417,
-                "width": 1280,
-                "height": 1417
+                "x": 0,
+                "y": 23,
+                "width": 1680,
+                "height": 1027
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 23,
+                    "width": 1680,
+                    "height": 1027
+                }
+            },
+            {
+                "folder": "file:///Users/benjamin/Documents/Git/website",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 23,
+                    "width": 1680,
+                    "height": 1027
+                }
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -224,6 +247,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/website",
+                                        "path": "/Users/benjamin/Documents/Git/website",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/website"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -312,17 +346,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/javascript-tests"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/website",
-                                        "path": "/Users/benjamin/Documents/Git/website",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/website"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -662,42 +685,48 @@
                             "items": [
                                 {
                                     "id": "workbench.action.toggleFullScreen",
-                                    "label": "Toggle &&Full Screen"
+                                    "label": "&&Full Screen"
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Toggle Zen Mode"
+                                    "label": "Zen Mode"
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "Toggle Centered Layout"
+                                    "label": "Centered Layout"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Toggle Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleStatusbarVisibility",
+                                    "label": "Show S&&tatus Bar",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleActivityBarVisibility",
+                                    "label": "Show &&Activity Bar",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.togglePanel",
+                                    "label": "Show &&Panel"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarPosition",
                                     "label": "&&Move Side Bar Right"
                                 },
                                 {
-                                    "id": "workbench.action.toggleStatusbarVisibility",
-                                    "label": "&&Hide Status Bar"
-                                },
-                                {
                                     "id": "workbench.action.togglePanelPosition",
-                                    "label": "Toggle Panel Position"
-                                },
-                                {
-                                    "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "Hide &&Activity Bar"
-                                },
-                                {
-                                    "id": "workbench.action.togglePanel",
-                                    "label": "Toggle &&Panel"
+                                    "label": "Move Panel Right"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -834,20 +863,20 @@
                     },
                     {
                         "id": "editor.action.toggleMinimap",
-                        "label": "Toggle &&Minimap"
-                    },
-                    {
-                        "id": "editor.action.toggleRenderWhitespace",
-                        "label": "Toggle &&Render Whitespace"
-                    },
-                    {
-                        "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "Toggle &&Control Characters"
+                        "label": "Show &&Minimap"
                     },
                     {
                         "id": "breadcrumbs.toggle",
-                        "label": "Toggle &&Breadcrumbs",
+                        "label": "Show &&Breadcrumbs",
                         "checked": true
+                    },
+                    {
+                        "id": "editor.action.toggleRenderWhitespace",
+                        "label": "&&Render Whitespace"
+                    },
+                    {
+                        "id": "editor.action.toggleRenderControlCharacter",
+                        "label": "Render &&Control Characters"
                     }
                 ]
             },
@@ -1268,6 +1297,10 @@
                         "label": "&&Settings"
                     },
                     {
+                        "id": "settings.filterByOnline",
+                        "label": "&&Online Services Settings"
+                    },
+                    {
                         "id": "workbench.view.extensions",
                         "label": "&&Extensions"
                     },
@@ -1345,8 +1378,8 @@
                 "userSettingsLabel": "cmd+w"
             },
             "workbench.action.closeWindow": {
-                "label": "Shift+Cmd+W",
-                "userSettingsLabel": "shift+cmd+w"
+                "label": "Cmd+W",
+                "userSettingsLabel": "cmd+w"
             },
             "undo": {
                 "label": "Cmd+Z",
@@ -1673,5 +1706,6 @@
             }
         }
     },
-    "macOSAppIconRefresh7": true
+    "macOSAppIconRefresh7": true,
+    "telemetry.trueMachineId": "bd95a2af20d7b2a767f2791956842bc7c2be7760fc6dc8882a5adccb0f6f2a55"
 }
