@@ -3,10 +3,11 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
-            "file:///Users/benjamin/Documents/Git/website",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "file:///Users/benjamin/Documents/Git/homepage",
+            "file:///Users/benjamin/Documents/Git/scss-lint-default.yml",
             "file:///Users/benjamin/Documents/Git/styleguide",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "file:///Users/benjamin/Documents/Git/website",
+            "file:///Users/benjamin/Documents/Git/homepage",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer",
             "file:///Users/benjamin/.Trash/js-assignments",
             "file:///Users/benjamin/Documents/Git/frontend-assignment",
@@ -21,7 +22,6 @@
             "vscode-remote://ssh-remote%2Bgrafana-1.europe-west4-c.hiber-production/var/lib",
             "vscode-remote://ssh-remote%2Bgrafana-1.europe-west4-c.hiber-production/var/lib/grafana/plugins",
             "file:///Users/benjamin/Documents/Git/windrose-panel",
-            "file:///Users/benjamin/Documents/Git/scss-lint-default.yml",
             "file:///usr/share/zsh/site-functions",
             "file:///Users/benjamin/Documents/Git",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend",
@@ -116,9 +116,9 @@
             null,
             null,
             null,
+            null,
             "/var/lib/ [SSH: grafana-1.europe-west4-c.hiber-production]",
             "/var/lib/grafana/plugins/ [SSH: grafana-1.europe-west4-c.hiber-production]",
-            null,
             null,
             null,
             null,
@@ -166,40 +166,17 @@
     "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/website",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
+            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
             "uiState": {
                 "mode": 1,
-                "x": 0,
+                "x": 1280,
                 "y": 23,
-                "width": 1680,
-                "height": 1027
+                "width": 1280,
+                "height": 1417
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 23,
-                    "width": 1680,
-                    "height": 1027
-                }
-            },
-            {
-                "folder": "file:///Users/benjamin/Documents/Git/website",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 23,
-                    "width": 1680,
-                    "height": 1027
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -252,12 +229,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/website",
-                                        "path": "/Users/benjamin/Documents/Git/website",
+                                        "external": "file:///Users/benjamin/Documents/Git/scss-lint-default.yml",
+                                        "path": "/Users/benjamin/Documents/Git/scss-lint-default.yml",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/website"
+                                    "label": "~/Documents/Git/scss-lint-default.yml"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
+                                        "path": "/Users/benjamin/Documents/Git/styleguide",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/styleguide"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -274,23 +262,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/website",
+                                        "path": "/Users/benjamin/Documents/Git/website",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/website"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/homepage",
                                         "path": "/Users/benjamin/Documents/Git/homepage",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/homepage"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
-                                        "path": "/Users/benjamin/Documents/Git/styleguide",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/styleguide"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -335,17 +323,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/js-assignments"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/javascript-tests",
-                                        "path": "/Users/benjamin/Documents/Git/javascript-tests",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/javascript-tests"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
