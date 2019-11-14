@@ -1,8 +1,9 @@
 {
   "dependencies": {
+    "@vue/cli": "^4.0.5",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
-    "dependency-check": "^3.3.0",
+    "depcheck": "^0.9.1",
     "docsify-cli": "^4.3.0",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
@@ -13,7 +14,6 @@
     "snyk": "^1.150.0",
     "spoof": "^2.0.1",
     "vtop": "^0.6.1",
-    "vue-cli": "^2.9.6",
     "vue-svgicon": "^2.1.2"
   }
 }
