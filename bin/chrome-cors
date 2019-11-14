@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# chrome-cors
+#
+# A simple command for opening a new Google Chrome instance with web secuirty disabled, allowing you to access cross-origin requests
+
+open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
