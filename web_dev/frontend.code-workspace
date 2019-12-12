@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "core",
+			"path": "/Users/benjamin/Documents/Git/ms-code/frontend/core"
+		},
+		{
+			"name": "mission-control",
+			"path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control"
+		},
+		{
+			"name": "gateway-ui",
+			"path": "/Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui"
+		},
+		{
+			"name": "noc-ui",
+			"path": "/Users/benjamin/Documents/Git/ms-code/frontend/noc-ui"
+		},
+		{
+			"path": "/Users/benjamin/Documents/Git/styleguide"
+		}
+	],
+	"settings": {}
+}

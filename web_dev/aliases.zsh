@@ -1,0 +1,1 @@
+alias efe='e ~/.dotfiles/web_dev/frontend.code-workspace'
