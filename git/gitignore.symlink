@@ -16,7 +16,7 @@
 
 # Created by git when using merge tools for conflicts
 *.BACKUP.*
-*.BASE.*
+# *.BASE.*
 *.LOCAL.*
 *.REMOTE.*
 *_BACKUP_*.txt
