@@ -9,11 +9,11 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
-    "workbench.colorTheme": "Legacy - Material Theme Darker",
+    "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
     "materialTheme.fixIconsRunning": false,
     "workbench.colorCustomizations": {
         "activityBar.activeBorder": "#00BCD4",
-        "activityBar.background": "#1A1A1A",
+        // "activityBar.background": "#1A1A1A",
         "activityBarBadge.background": "#00BCD4",
         "breadcrumb.activeSelectionForeground": "#00BCD4",
         "editor.findWidgetResizeBorder": "#00BCD4",
@@ -29,7 +29,7 @@
         "panelTitle.activeBorder": "#00BCD4",
         "pickerGroup.foreground": "#00BCD4",
         "progressBar.background": "#00BCD4",
-        "sideBar.background": "#1A1A1A",
+        // "sideBar.background": "#1A1A1A",
         "scrollbarSlider.activeBackground": "#00BCD450",
         "settings.headerForeground": "#00BCD4",
         "settings.modifiedItemIndicator": "#00BCD4",
@@ -55,9 +55,12 @@
     "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "eq-material-theme-icons-ocean",
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.scopes": [
         "document"
     ],
+    "editor.renderWhitespace": "all",
+    "eslint.debug": true,
+    "eslint.nodePath": "~/.config/yarn/global/node_modules"
 }
