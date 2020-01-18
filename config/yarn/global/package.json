@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@nothingrandom/roll": "/Users/benjamin/Documents/Git/roll",
     "@vue/cli": "^4.0.5",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
