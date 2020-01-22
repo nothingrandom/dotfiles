@@ -2,22 +2,28 @@
     "telemetry.machineId": "6c9d2bc8f91b89624add29c0abeae7fb42bf539fa1cdb2e3e57cd668fa9bcead",
     "openedPathsList": {
         "workspaces3": [
-            "file:///Users/benjamin/Documents/Git/roll",
-            "file:///Users/benjamin/.dotfiles",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
+            "file:///Users/benjamin/Documents/Git/homepage",
+            "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer/cli",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend",
-            "file:///Users/benjamin/Documents/Git/styleguide",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
+            "file:///Users/benjamin/Documents/Git/roll",
+            "file:///Users/benjamin/Documents/Git/ydmo",
+            "file:///Users/benjamin/Documents/Git/u8array",
+            "file:///Users/benjamin/Documents/Git/ms-code",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "file:///Users/benjamin/Documents/Git/create-uint8-array",
+            "file:///Users/benjamin/.dotfiles",
+            "file:///Users/benjamin/Documents/Git/katyhollway",
+            "file:///Users/benjamin/Documents/Git/website",
+            "file:///Users/benjamin/Documents/Git/frontend-assignments",
+            "file:///Users/benjamin/Documents/Git/styleguide",
             "file:///Users/benjamin/Documents/Git/roll-it",
             "file:///Users/benjamin/Downloads/node-roll-master",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
-            "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/0random.co",
-            "file:///Users/benjamin/Documents/Git/homepage",
             "file:///Users/benjamin/Documents/Git/parcel-plugin-ogimage",
             "file:///Users/benjamin/Documents/Git/deploy-scripts",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
             "file:///Users/benjamin/Documents/Git/browser-reset",
-            "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/.config",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
             "file:///Users/benjamin/Documents/Git/ms-code/gateway",
@@ -168,6 +174,12 @@
             null,
             null,
             null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
             "/var/lib/ [SSH: grafana-1.europe-west4-c.hiber-production]",
             "/var/lib/grafana/plugins/ [SSH: grafana-1.europe-west4-c.hiber-production]",
             null,
@@ -211,37 +223,37 @@
     "themeBackground": "#0f111a",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/3b5935bcd90694f7de38906158a2198e",
+            "folder": "file:///Users/benjamin/Documents/Git/roll",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/42d3bcfc4515129b1a93e837401f11fc",
             "uiState": {
                 "mode": 1,
-                "x": 1280,
+                "x": 0,
                 "y": 23,
-                "width": 1280,
+                "width": 2560,
                 "height": 1417
             }
         },
         "openedWindows": [
             {
-                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/3b5935bcd90694f7de38906158a2198e",
-                "uiState": {
-                    "mode": 1,
-                    "x": 1280,
-                    "y": 23,
-                    "width": 1280,
-                    "height": 1417
-                }
-            },
-            {
-                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
+                "folder": "file:///Users/benjamin/Documents/Git/roll",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/42d3bcfc4515129b1a93e837401f11fc",
                 "uiState": {
                     "mode": 1,
                     "x": 0,
                     "y": 23,
-                    "width": 1280,
+                    "width": 2560,
                     "height": 1417
+                }
+            },
+            {
+                "folder": "file:///Users/benjamin/Documents/Git/website",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 413,
+                    "width": 1680,
+                    "height": 1027
                 }
             }
         ]
@@ -285,46 +297,46 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/benjamin/Documents/Git/ms-code/frontend",
+                                        "fsPath": "/Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend/gateway-ui"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage",
+                                        "path": "/Users/benjamin/Documents/Git/homepage",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer/cli",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/backend/api/customer/cli",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/backend/api/customer/cli"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend",
                                         "path": "/Users/benjamin/Documents/Git/ms-code/frontend",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/ms-code/frontend"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/roll",
-                                        "path": "/Users/benjamin/Documents/Git/roll",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/roll"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dotfiles",
-                                        "path": "/Users/benjamin/.dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/styleguide",
-                                        "path": "/Users/benjamin/Documents/Git/styleguide",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/styleguide"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -341,56 +353,56 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/roll-it",
-                                        "path": "/Users/benjamin/Documents/Git/roll-it",
+                                        "external": "file:///Users/benjamin/Documents/Git/roll",
+                                        "path": "/Users/benjamin/Documents/Git/roll",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/roll-it"
+                                    "label": "~/Documents/Git/roll"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Downloads/node-roll-master",
-                                        "path": "/Users/benjamin/Downloads/node-roll-master",
+                                        "external": "file:///Users/benjamin/Documents/Git/ydmo",
+                                        "path": "/Users/benjamin/Documents/Git/ydmo",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Downloads/node-roll-master"
+                                    "label": "~/Documents/Git/ydmo"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
+                                        "external": "file:///Users/benjamin/Documents/Git/u8array",
+                                        "path": "/Users/benjamin/Documents/Git/u8array",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/gateway-ui"
+                                    "label": "~/Documents/Git/u8array"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/website",
-                                        "path": "/Users/benjamin/Documents/Git/website",
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/website"
+                                    "label": "~/Documents/Git/ms-code"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/0random.co",
-                                        "path": "/Users/benjamin/Documents/Git/0random.co",
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/0random.co"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"

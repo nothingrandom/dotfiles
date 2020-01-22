@@ -1,18 +1,20 @@
 #!/bin/sh
 
 repo="$1"
+github='nothingrandom'
 
 if [[ -z "$repo" ]]; then
-  echo "Syntax: git setup user/project"
+  echo "Syntax: git setup project"
   exit
 fi
 
-mkdir -p "$dev/$repo" && \
-  cd "$dev/$repo" && \
+mkdir -p "$PROJECTS/$repo" && \
+  cd "$PROJECTS/$repo" && \
   git init && \
-  touch 'README.md' 'CHANGELOG.md' && \
+  touch 'README.md' 'LICENSE' && \
+  cp "$HOME/.gitignore" '.gitignore' && \
   cp "$HOME/.gitignore" '.gitignore' && \
   git add "*" && git add '.gitignore' && \
   git commit -m 'Initial commit.' && \
-  git remote add origin "git@github.com:$repo" && \
+  git remote add origin "git@github.com:$github/$repo" && \
   git push -u origin master
