@@ -12,7 +12,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.2.2",
     "mddir": "^1.1.1",
-    "snyk": "^1.278.1",
+    "snyk": "^1.278.2",
     "spoof": "^2.0.1",
     "vtop": "^0.6.1",
     "vue-svgicon": "^3.0.0"
