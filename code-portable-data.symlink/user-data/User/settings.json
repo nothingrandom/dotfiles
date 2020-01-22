@@ -61,5 +61,6 @@
         "document"
     ],
     "editor.renderWhitespace": "all",
-    // "eslint.nodePath": "/usr/local/lib/node_modules/"
+    "xo.enable": true,
+    "eslint.nodePath": "/usr/local/lib/node_modules/"
 }
