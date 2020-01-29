@@ -13,7 +13,6 @@ mkdir -p "$PROJECTS/$repo" && \
   git init && \
   touch 'README.md' 'LICENSE' && \
   cp "$HOME/.gitignore" '.gitignore' && \
-  cp "$HOME/.gitignore" '.gitignore' && \
   git add "*" && git add '.gitignore' && \
   git commit -m 'Initial commit.' && \
   git remote add origin "git@github.com:$github/$repo" && \

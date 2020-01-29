@@ -62,5 +62,7 @@
     ],
     "editor.renderWhitespace": "all",
     "xo.enable": true,
-    "eslint.nodePath": "/usr/local/lib/node_modules/"
+    "stylelint.enable": true,
+    "stylelint.packageManager": "yarn",
+    "eslint.nodePath": "/Users/benjamin/.config/yarn/global"
 }
