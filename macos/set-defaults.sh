@@ -19,6 +19,18 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
+# Set reasonable file limits                                                  #
+# see: https://github.com/meteor/meteor/issues/8057                           #
+# http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit     #
+###############################################################################
+
+echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
+echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -w kern.maxfiles=65536
+sudo sysctl -w kern.maxfilesperproc=65536
+sudo ulimit -n 65536
+
+###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
