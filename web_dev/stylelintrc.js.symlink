@@ -5,7 +5,6 @@ module.exports = {
   ],
   "extends": [
     '/Users/benjamin/.config/yarn/global/node_modules/stylelint-config-recommended-scss',
-  // '/Users/benjamin/.config/yarn/global/node_modules/stylelint-config-rational-order',
   ],
   "rules": {
     // "at-rule-blacklist": string|[],
