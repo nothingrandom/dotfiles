@@ -301,24 +301,24 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/benjamin/Documents/Git/homepage",
-                                        "external": "file:///Users/benjamin/Documents/Git/homepage",
-                                        "path": "/Users/benjamin/Documents/Git/homepage",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/homepage"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
+                                        "fsPath": "/Users/benjamin/.dotfiles",
                                         "external": "file:///Users/benjamin/.dotfiles",
                                         "path": "/Users/benjamin/.dotfiles",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/homepage",
+                                        "path": "/Users/benjamin/Documents/Git/homepage",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage"
                                 },
                                 {
                                     "id": "openRecentFolder",
