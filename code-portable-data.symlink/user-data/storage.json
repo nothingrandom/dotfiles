@@ -5,11 +5,11 @@
             "file:///Users/benjamin/.dotfiles",
             "file:///Users/benjamin/Documents/Git/homepage",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
             "file:///Users/benjamin/Documents/Git/barebones",
             "file:///",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend",
             "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
             "file:///Users/benjamin/Documents/Git/ms-code",
@@ -107,6 +107,7 @@
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/internal/proto"
         ],
         "files2": [
+            "file:///Users/benjamin/Desktop/user-astronaut.svg",
             "file:///Users/benjamin/Documents/Git/browser-reset/%2C",
             "file:///Users/benjamin/Wine%20Files/system.reg",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/core/src/scss/components/_modal.scss",
@@ -300,18 +301,7 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/benjamin/.dotfiles",
-                                        "external": "file:///Users/benjamin/.dotfiles",
-                                        "path": "/Users/benjamin/.dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
+                                        "fsPath": "/Users/benjamin/Documents/Git/homepage",
                                         "external": "file:///Users/benjamin/Documents/Git/homepage",
                                         "path": "/Users/benjamin/Documents/Git/homepage",
                                         "scheme": "file"
@@ -323,12 +313,34 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///Users/benjamin/.dotfiles",
+                                        "path": "/Users/benjamin/.dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
                                         "path": "/Users/benjamin/Documents/Git/ms-code/frontend/core",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/ms-code/frontend/core"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -378,17 +390,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///Users/benjamin/Documents/Git/website",
                                         "path": "/Users/benjamin/Documents/Git/website",
                                         "scheme": "file"
@@ -409,6 +410,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Desktop/user-astronaut.svg",
+                                        "path": "/Users/benjamin/Desktop/user-astronaut.svg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/user-astronaut.svg"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -508,17 +520,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.dot"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/.config/lpass/lpass_user",
-                                        "path": "/Users/benjamin/.config/lpass/lpass_user",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/lpass/lpass_user"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
