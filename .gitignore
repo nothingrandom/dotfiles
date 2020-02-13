@@ -1,3 +1,8 @@
+code-portable-data.symlink/user-data/*
+!code-portable-data.symlink/user-data/User
+code-portable-data.symlink/user-data/User/workspaceStorage
+!code-portable-data.symlink/user-data/rapid_render.json
+!code-portable-data.symlink/user-data/storage.json
 
 # Created by https://www.gitignore.io/api/git,node,code,linux,macos,windows
 # Edit at https://www.gitignore.io/?templates=git,node,code,linux,macos,windows
