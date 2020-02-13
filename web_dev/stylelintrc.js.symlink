@@ -20,14 +20,14 @@ module.exports = {
     // "at-rule-whitelist": string|[],
     // "block-closing-brace-empty-line-before": "always-multi-line"|"never",
     // "block-closing-brace-newline-after": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
-    // "block-closing-brace-newline-before": "always"|"always-multi-line"|"never-multi-line",
+    "block-closing-brace-newline-before": "always", // |"always-multi-line"|"never-multi-line",
     // "block-closing-brace-space-after": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
     // "block-closing-brace-space-before": "always"|"never"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
     // "block-no-empty": true,
-    // "block-opening-brace-newline-after": "always"|"always-multi-line"|"never-multi-line",
+    "block-opening-brace-newline-after": "always", // |"always-multi-line"|"never-multi-line",
     // "block-opening-brace-newline-before": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
     // "block-opening-brace-space-after": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
-    // "block-opening-brace-space-before": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
+    "block-opening-brace-space-before": "always", // |"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
     "color-hex-case": "upper", // "lower"
     "color-hex-length": "long", // "short"
     // "color-named": "always-where-possible"|"never",
@@ -82,7 +82,7 @@ module.exports = {
     // "function-url-scheme-whitelist": string|[],
     // "function-whitelist": string|[],
     // "function-whitespace-after": "always"|"never",
-    // "indentation": int|"tab",
+    "indentation": 2, //|"tab",
     // "keyframe-declaration-no-important": true,
     // "keyframes-name-pattern": string,
     // "length-zero-no-unit": true,
@@ -123,7 +123,11 @@ module.exports = {
     // "property-no-unknown": true,
     // "property-no-vendor-prefix": true,
     // "property-whitelist": string|[],
-    // "rule-empty-line-before": "always"|"never"|"always-multi-line"|"never-multi-line",
+    "rule-empty-line-before": [
+      "always", {
+        'except': ['first-nested', 'after-single-line-comment']
+      }
+    ], //|"never"|"always-multi-line"|"never-multi-line",
     // "selector-attribute-brackets-space-inside": "always"|"never",
     // "selector-attribute-operator-blacklist": string|[],
     // "selector-attribute-operator-space-after": "always"|"never",
@@ -237,7 +241,7 @@ module.exports = {
     // "scss/selector-no-redundant-nesting-selector": '',
     // "scss/selector-no-union-class-name": '',
 
-    "order/order": ['at-variables', 'at-rules', 'declarations', 'rules'],
+    "order/order": ['at-variables', { type: 'at-rule', hasBlock: false }, 'declarations', { type: 'at-rule', hasBlock: true }, 'rules'],
     "order/properties-order": [
       // positioning
       "position", "top", "right", "bottom", "left", "z-index",
