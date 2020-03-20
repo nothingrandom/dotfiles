@@ -13,7 +13,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^6.1.2",
     "mddir": "^1.1.1",
-    "npm-name-cli": "^2.6.1",
+    "npm-name-cli": "^3.0.0",
     "snyk": "^1.279.1",
     "spoof": "^2.0.1",
     "stylelint": "^13.0.0",
