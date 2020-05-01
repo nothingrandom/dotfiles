@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -11,3 +11,160 @@ patch:
   SNYK-JS-TREEKILL-536781:
     - snyk > snyk-sbt-plugin > tree-kill:
         patched: '2020-01-18T09:11:21.866Z'
+  SNYK-JS-LODASH-567746:
+    - docsify-cli > docsify > opencollective > inquirer > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - docsify-cli > docsify-server-renderer > docsify > opencollective > inquirer > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - depcheck > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - eslint > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint-order > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint-scss > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - babel-eslint > @babel/traverse > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - eslint > table > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > table > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > inquirer > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - depcheck > @babel/traverse > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - eslint > inquirer > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - eslint-plugin-vue > vue-eslint-parser > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-reporter > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint-order > postcss-sorting > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > lowdb > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli-init > vue-cli > async > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - depcheck > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli-init > vue-cli > inquirer > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/register > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > vue-jscodeshift-adapter > cheerio > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-shared-utils > request-promise-native > request-promise-core > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > portfinder > async > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - depcheck > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/traverse > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - npm-name-cli > squatter > check-npm-dependents > cheerio > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > @vue/cli-shared-utils > request-promise-native > request-promise-core > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > @oclif/plugin-not-found > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - depcheck > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > table > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > @oclif/plugin-plugins > cli-ux > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-unicode-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-core > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-flow > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-typescript > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > gaze > globule > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-core > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-flow > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-typescript > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-flow > apollo-codegen-core > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-scala > apollo-codegen-core > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-swift > apollo-codegen-core > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-typescript > apollo-codegen-core > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-flow > apollo-codegen-core > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-scala > apollo-codegen-core > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-swift > apollo-codegen-core > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > @vue/cli-ui > vue-cli-plugin-apollo > apollo > apollo-codegen-typescript > apollo-codegen-core > @babel/generator > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
+    - '@vue/cli > jscodeshift > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2020-05-01T01:22:47.357Z'
