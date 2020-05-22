@@ -9,7 +9,6 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
-    "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
     "materialTheme.fixIconsRunning": false,
     "workbench.colorCustomizations": {
         "activityBar.activeBorder": "#00BCD4",
@@ -64,5 +63,7 @@
     "xo.enable": true,
     "stylelint.enable": true,
     "stylelint.packageManager": "yarn",
-    "eslint.nodePath": "/Users/benjamin/.config/yarn/global"
+    "eslint.nodePath": "/Users/benjamin/.config/yarn/global",
+    "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+    "editor.semanticHighlighting.enabled": false
 }
