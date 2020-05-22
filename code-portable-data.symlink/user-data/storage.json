@@ -3,15 +3,25 @@
     "openedPathsList": {
         "workspaces3": [
             "file:///Users/benjamin/.dotfiles",
-            "file:///Users/benjamin/Documents/Git/homepage",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "file:///Users/benjamin/Documents/Git/barebones",
-            "file:///",
-            "file:///Users/benjamin/Documents/Git/website",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend",
+            "file:///Users/benjamin/Documents/Git/ms-code/backend",
+            "file:///Users/benjamin/Documents/Git/homepage",
+            "file:///Users/benjamin/Documents/Git/chirpstack-docker",
+            "file:///",
+            "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer/cli",
+            "file:///Users/benjamin/Documents/Git/ms-code/gateway",
+            "file:///Users/benjamin/Documents/Git/ms-code/backend/api/support/cli",
+            "file:///Users/benjamin/Documents/Git/sales-scripts",
+            "file:///Users/benjamin/Documents/Git/ms-code/backend/api",
+            "file:///Users/benjamin/Documents/Git/frontend-assignments/frontend-assignment",
+            "file:///Users/benjamin/Documents/Git/media-library",
+            "file:///Users/benjamin/Documents/Git/website",
+            "file:///Users/benjamin/Documents/Git/11ty-website",
+            "file:///Users/benjamin/Documents/Git/barebones",
             "file:///Users/benjamin/Documents/Git/ms-code",
             "file:///Users/benjamin/Documents/Git/browser-reset",
             "file:///Users/benjamin/Documents/Git/openlp",
@@ -24,9 +34,6 @@
             "file:///Users/benjamin/Documents/Git/eleventyone",
             "file:///Users/benjamin/Documents/Git/gh-latest-repos-mirror",
             "file:///Users/benjamin/Documents/Git/gh-latest-repos",
-            "file:///Users/benjamin/Documents/Git/ms-code/backend/api/support/cli",
-            "file:///Users/benjamin/Documents/Git/ms-code/backend/api",
-            "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer/cli",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/customer",
             "file:///Users/benjamin/Desktop/technical-assessment-software",
             "file:///Users/benjamin/Documents/Git/u8array",
@@ -41,7 +48,6 @@
             "file:///Users/benjamin/Documents/Git/0random.co",
             "file:///Users/benjamin/Documents/Git/parcel-plugin-ogimage",
             "file:///Users/benjamin/.config",
-            "file:///Users/benjamin/Documents/Git/ms-code/gateway",
             {
                 "id": "e84c0332087b4c6a187061dfb0c8b578",
                 "configURIPath": "file:///Users/benjamin/.dotfiles/web_dev/frontend.code-workspace"
@@ -50,13 +56,11 @@
                 "id": "e180104a49aaff02b7371f4e09cb0720",
                 "configURIPath": "file:///Users/benjamin/Desktop/frontend.code-workspace"
             },
-            "file:///Users/benjamin/Documents/Git/frontend-assignments/frontend-assignment",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-web-ui",
             "file:///Users/benjamin/Documents/Git/ms-code/gateway/gateway-web-ui",
             "file:///Users/benjamin/Documents/Git/eleventy-parcel-boilerplate",
             "file:///Users/benjamin/Documents/Git/frontend-assignments/frontend-assignment-benjamin",
             "file:///Users/benjamin/Documents/Git/frontend-assignment",
-            "file:///Users/benjamin/Documents/Git/sales-scripts",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control-old",
             "file:///Users/benjamin/Documents/Git/ms-code/gateway/hiber-ui",
             "file:///Users/benjamin/Documents/Git/scss-lint-default.yml",
@@ -72,7 +76,6 @@
             "file:///Users/benjamin/Documents/Git/homepage-php-leftovers",
             "file:///Users/benjamin/Documents/Git/hiber-website",
             "file:///Users/benjamin/Documents/Git/homepage/static/php-static",
-            "file:///Users/benjamin/Documents/Git/media-library",
             "file:///Users/benjamin/Documents/Git/weather-app",
             "file:///Users/benjamin/Documents/Git/mxb",
             "file:///Users/benjamin/Documents/Git/barebonesio",
@@ -99,7 +102,6 @@
             "file:///Users/benjamin/Documents/Git/grpc-test-project",
             "file:///Users/benjamin/Documents/Git/ms-code/grpc-web-example",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/deploy",
-            "file:///Users/benjamin/Documents/Git/ms-code/backend",
             "file:///Users/benjamin/Documents/Git/hiber-website/store",
             "file:///Users/benjamin/Downloads/creativefund.hiber.global",
             "file:///Users/benjamin/Documents/Git/ms-code/proto",
@@ -107,6 +109,16 @@
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/internal/proto"
         ],
         "files2": [
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/CHANGELOG.md",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/main.js",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/store/modules/integrations.js",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Actions.vue",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/%2C",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Webhooks.vue",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Tokens.vue",
+            "file:///Users/benjamin/Documents/Git/ms-code/frontend/core/src/components/global/Log.vue",
+            "file:///Users/benjamin/.dotfiles/%2C",
+            "file:///Users/benjamin/Documents/Git/11ty-website/%2C",
             "file:///Users/benjamin/Desktop/user-astronaut.svg",
             "file:///Users/benjamin/Documents/Git/browser-reset/%2C",
             "file:///Users/benjamin/Wine%20Files/system.reg",
@@ -143,7 +155,6 @@
             "file:///Users/benjamin/.Trash/example-post.md",
             "file:///Users/benjamin/Downloads/favicon_io/site.webmanifest",
             "file:///Users/benjamin/Documents/Git/styleguide/%2C",
-            "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/%2C",
             "file:///Users/benjamin/Desktop/sat.svg",
             "file:///Users/benjamin/Documents/Git/new-web/index.html",
             "file:///Users/benjamin/Downloads/Staff%20Hiber%20%20-%20Blad1.csv",
@@ -153,6 +164,10 @@
             "file:///~/Downloads/Makerfair_logotype.svg"
         ],
         "workspaceLabels": [
+            null,
+            null,
+            null,
+            null,
             null,
             null,
             null,
@@ -241,8 +256,6 @@
             null,
             null,
             null,
-            null,
-            null,
             null
         ]
     },
@@ -250,14 +263,14 @@
     "themeBackground": "#0f111a",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/website",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/725da7da5ebd4292b0df1240002fd75d",
+            "folder": "file:///Users/benjamin/.dotfiles",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
             "uiState": {
                 "mode": 1,
-                "x": 0,
+                "x": 1280,
                 "y": 23,
-                "width": 1680,
-                "height": 1027
+                "width": 1280,
+                "height": 1417
             }
         },
         "openedWindows": []
@@ -292,7 +305,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -313,40 +327,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/homepage",
-                                        "path": "/Users/benjamin/Documents/Git/homepage",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/homepage"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/core",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/core"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
                                         "path": "/Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
                                         "scheme": "file"
                                     },
@@ -357,7 +337,26 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/core",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend/core"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend/noc-ui"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
                                         "scheme": "file"
                                     },
@@ -368,45 +367,51 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/barebones",
-                                        "path": "/Users/benjamin/Documents/Git/barebones",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/barebones"
+                                    "label": "~/Documents/Git/ms-code/frontend"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/backend",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/backend"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/benjamin/Documents/Git/homepage",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/homepage"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/benjamin/Documents/Git/chirpstack-docker",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/chirpstack-docker"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "path": "/",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "/"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/website",
-                                        "path": "/Users/benjamin/Documents/Git/website",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/website"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/noc-ui"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -415,111 +420,101 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Desktop/user-astronaut.svg",
-                                        "path": "/Users/benjamin/Desktop/user-astronaut.svg",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/CHANGELOG.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Desktop/user-astronaut.svg"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/CHANGELOG.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/browser-reset/%2C",
-                                        "path": "/Users/benjamin/Documents/Git/browser-reset/,",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/main.js",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/browser-reset/,"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/main.js"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Wine%20Files/system.reg",
-                                        "path": "/Users/benjamin/Wine Files/system.reg",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/store/modules/integrations.js",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Wine Files/system.reg"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/store/modules/integrations.js"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/core/src/scss/components/_modal.scss",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/core/src/scss/components/_modal.scss",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Actions.vue",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/core/src/scss/components/_modal.scss"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Actions.vue"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/.eslintrc.js",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/.eslintrc.js",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/,",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/.eslintrc.js"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/,"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/pages/User.vue",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/pages/User.vue",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Webhooks.vue",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/components/pages/User.vue"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Webhooks.vue"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/.eslintrc.js",
-                                        "path": "/Users/benjamin/.eslintrc.js",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Tokens.vue",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.eslintrc.js"
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control/src/components/templates/Developers/Integrations/Tokens.vue"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/.stylelintrc.js",
-                                        "path": "/Users/benjamin/.stylelintrc.js",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/core/src/components/global/Log.vue",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.stylelintrc.js"
+                                    "label": "~/Documents/Git/ms-code/frontend/core/src/components/global/Log.vue"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dotfiles/hyper/hyper.js.symlink",
-                                        "path": "/Users/benjamin/.dotfiles/hyper/hyper.js.symlink",
+                                        "path": "/Users/benjamin/.dotfiles/,",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.dotfiles/hyper/hyper.js.symlink"
+                                    "label": "~/.dotfiles/,"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dot",
-                                        "path": "/Users/benjamin/.dot",
+                                        "path": "/Users/benjamin/Documents/Git/11ty-website/,",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.dot"
+                                    "label": "~/Documents/Git/11ty-website/,"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -702,10 +697,6 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "workbench.action.toggleMultiCursorModifier",
-                        "label": "Switch to Cmd+Click for Multi-Cursor"
-                    },
-                    {
                         "id": "editor.action.insertCursorAbove",
                         "label": "&&Add Cursor Above"
                     },
@@ -728,6 +719,17 @@
                     {
                         "id": "editor.action.selectHighlights",
                         "label": "Select All &&Occurrences"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleMultiCursorModifier",
+                        "label": "Switch to Alt+Click for Multi-Cursor"
+                    },
+                    {
+                        "id": "editor.action.toggleColumnSelection",
+                        "label": "Column &&Selection Mode"
                     }
                 ]
             },
@@ -796,7 +798,11 @@
                                     "label": "&&Move Side Bar Right"
                                 },
                                 {
-                                    "id": "workbench.action.togglePanelPosition",
+                                    "id": "workbench.action.positionPanelLeft",
+                                    "label": "Move Panel Left"
+                                },
+                                {
+                                    "id": "workbench.action.positionPanelRight",
                                     "label": "Move Panel Right"
                                 },
                                 {
@@ -900,7 +906,7 @@
                     },
                     {
                         "id": "workbench.view.debug",
-                        "label": "&&Debug"
+                        "label": "&&Run"
                     },
                     {
                         "id": "workbench.view.extensions",
@@ -987,6 +993,28 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.openNextRecentlyUsedEditor",
+                                    "label": "&&Next Used Editor"
+                                },
+                                {
+                                    "id": "workbench.action.openPreviousRecentlyUsedEditor",
+                                    "label": "&&Previous Used Editor"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.nextEditorInGroup",
+                                    "label": "&&Next Editor in Group"
+                                },
+                                {
+                                    "id": "workbench.action.previousEditorInGroup",
+                                    "label": "&&Previous Editor in Group"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.openNextRecentlyUsedEditorInGroup",
                                     "label": "&&Next Used Editor in Group"
                                 },
@@ -1012,45 +1040,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1071,7 +1108,7 @@
                     },
                     {
                         "id": "workbench.action.gotoSymbol",
-                        "label": "Go to &&Symbol in File..."
+                        "label": "Go to &&Symbol in Editor..."
                     },
                     {
                         "id": "editor.action.revealDefinition",
@@ -1128,7 +1165,7 @@
                     }
                 ]
             },
-            "Debug": {
+            "Run": {
                 "items": [
                     {
                         "id": "workbench.action.debug.start",
@@ -1389,7 +1426,7 @@
                     },
                     {
                         "id": "workbench.action.openGlobalKeybindings",
-                        "label": "&&Keyboard Shortcuts"
+                        "label": "Keyboard Shortcuts"
                     },
                     {
                         "id": "workbench.extensions.action.showRecommendedKeymapExtensions",
@@ -1651,14 +1688,6 @@
             "workbench.action.previousEditor": {
                 "label": "Alt+Cmd+Left",
                 "userSettingsLabel": "alt+cmd+left"
-            },
-            "workbench.action.openNextRecentlyUsedEditorInGroup": {
-                "label": "Ctrl+Tab",
-                "userSettingsLabel": "ctrl+tab"
-            },
-            "workbench.action.openPreviousRecentlyUsedEditorInGroup": {
-                "label": "Ctrl+Shift+Tab",
-                "userSettingsLabel": "ctrl+shift+tab"
             },
             "workbench.action.focusFirstEditorGroup": {
                 "label": "Cmd+1",
