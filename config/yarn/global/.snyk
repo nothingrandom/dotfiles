@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.19.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -11,3 +11,9 @@ patch:
   SNYK-JS-TREEKILL-536781:
     - snyk > snyk-sbt-plugin > tree-kill:
         patched: '2020-01-18T09:11:21.866Z'
+  SNYK-JS-LODASH-567746:
+    - eslint-plugin-unicorn > lodash:
+        patched: '2021-01-06T15:29:01.901Z'
+  'npm:lodash:20180130':
+    - git-labelmaker > inquirer > lodash:
+        patched: '2021-01-06T15:29:01.901Z'
