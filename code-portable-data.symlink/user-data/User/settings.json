@@ -11,6 +11,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "materialTheme.fixIconsRunning": false,
     "workbench.colorCustomizations": {
+
         "activityBar.activeBorder": "#00BCD4",
         // "activityBar.background": "#1A1A1A",
         "activityBarBadge.background": "#00BCD4",
@@ -38,6 +39,7 @@
     "materialTheme.accentPrevious": "",
     "materialTheme.accent": "Cyan",
     "files.trimTrailingWhitespace": true,
+    "[markdown]": { "files.trimTrailingWhitespace": false },
     "workbench.startupEditor": "newUntitledFile",
     "scssLint.statusBarText": "",
     "eslint.validate": [
@@ -65,5 +67,6 @@
     "stylelint.packageManager": "yarn",
     "eslint.nodePath": "/Users/benjamin/.config/yarn/global",
     "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
-    "editor.semanticHighlighting.enabled": false
+    "editor.fontLigatures": null,
+    // "editor.semanticHighlighting.enabled": false,
 }
