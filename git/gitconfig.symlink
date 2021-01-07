@@ -53,6 +53,6 @@
 [user]
 	name = Benjamin Hollway
 	email = benjamin@nothingrandom.com
-	signingkey = 0189A5619E7C686D
+	signingkey = 053EDEC704302D5164A6DFE049825BBB14A34110
 [commit]
 	gpgsign = true
