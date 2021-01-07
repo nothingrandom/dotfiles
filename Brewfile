@@ -28,6 +28,8 @@ brew 'youtube-dl'
 brew 'legit'
 brew 'git-lfs'
 brew 'tldr'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
 
 cask '1password'
 cask 'adobe-creative-cloud'
