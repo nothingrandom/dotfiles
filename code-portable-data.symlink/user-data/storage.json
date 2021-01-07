@@ -2,6 +2,7 @@
     "telemetry.machineId": "bd95a2af20d7b2a767f2791956842bc7c2be7760fc6dc8882a5adccb0f6f2a55",
     "openedPathsList": {
         "workspaces3": [
+            "file:///Users/benjamin/.dotfiles",
             "file:///Users/benjamin/Documents/Git/ms-code/backend",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
             "file:///Users/benjamin/Documents/Git/homepage",
@@ -10,7 +11,6 @@
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/noc-ui",
             "file:///Users/benjamin/Documents/Git/ourchurchtoo",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api",
-            "file:///Users/benjamin/.dotfiles",
             "file:///Users/benjamin/Documents/Git/website",
             "file:///Users/benjamin/Documents/Git/ms-code/frontend/gateway-ui",
             "file:///Users/benjamin/Documents/Git/ms-code/backend/api/support/cli",
@@ -320,14 +320,14 @@
     "themeBackground": "#0f111a",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-            "backupPath": "/Applications/code-portable-data/user-data/Backups/cce1ea4eb0a30afbc7392b7c1192c652",
+            "folder": "file:///Users/benjamin/.dotfiles",
+            "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
             "uiState": {
                 "mode": 1,
-                "x": 1280,
-                "y": 25,
-                "width": 1280,
-                "height": 1415
+                "x": 768,
+                "y": 336,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": [
@@ -343,14 +343,14 @@
                 }
             },
             {
-                "folder": "file:///Users/benjamin/Documents/Git/ms-code/frontend/core",
-                "backupPath": "/Applications/code-portable-data/user-data/Backups/8336cad0b0f42239a9c1bded401006d9",
+                "folder": "file:///Users/benjamin/.dotfiles",
+                "backupPath": "/Applications/code-portable-data/user-data/Backups/659dfefd962be9d4fd3eac1232925b0b",
                 "uiState": {
                     "mode": 1,
-                    "x": 1280,
-                    "y": 25,
-                    "width": 1280,
-                    "height": 1415
+                    "x": 768,
+                    "y": 336,
+                    "width": 1024,
+                    "height": 768
                 }
             }
         ]
@@ -385,7 +385,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -394,13 +395,13 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
-                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "fsPath": "/Users/benjamin/.dotfiles",
+                                        "external": "file:///Users/benjamin/.dotfiles",
+                                        "path": "/Users/benjamin/.dotfiles",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
+                                    "label": "~/.dotfiles"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -434,6 +435,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/homepage"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "path": "/Users/benjamin/Documents/Git/ms-code/frontend/mission-control",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Git/ms-code/frontend/mission-control"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -478,17 +490,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Git/ms-code/backend/api"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///Users/benjamin/.dotfiles",
-                                        "path": "/Users/benjamin/.dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles"
                                 },
                                 {
                                     "id": "openRecentFolder",
