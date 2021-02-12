@@ -42,7 +42,7 @@ alias gb='git branch'
 alias gai='cp "$HOME/.gitignore" ".gitignore"'
 
 # Deletes a branch if it's been merged in to HEAD
-alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d; git fetch --all --prune; git branch -a'
+alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|main|develop|dev)\s*$)" | command xargs -n 1 git branch -d; git fetch --all --prune; git branch -a'
 
 # Adds a new branch to the upstream under the same name and pushes it
 alias gpsup='git push --set-upstream origin -u head'
