@@ -1,58 +1,62 @@
 # Local/private config goes in the include
 [include]
-        path = ~/.gitconfig.local
+  path = ~/.gitconfig.local
 [hub]
-        protocol = https
+  protocol = https
 [alias]
-        co = checkout
-        wtf     = !$ZSH/bin/git-wtf
-        rank    = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
-        new     = checkout -b
-	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
-	sync = !/usr/local/bin/legit sync
-	publish = !/usr/local/bin/legit publish
-	unpublish = !/usr/local/bin/legit unpublish
-	undo = !/usr/local/bin/legit undo
-	branches = !/usr/local/bin/legit branches
+  co = checkout
+  wtf     = !$ZSH/bin/git-wtf
+  rank    = !$ZSH/bin/git-rank-contributors
+  count   = !git shortlog -sn
+  new     = checkout -b
+  diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
+  sync = !/usr/local/bin/legit sync
+  publish = !/usr/local/bin/legit publish
+  unpublish = !/usr/local/bin/legit unpublish
+  undo = !/usr/local/bin/legit undo
+  branches = !/usr/local/bin/legit branches
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
 [core]
-        excludesfile = ~/.gitignore
-        editor = vim
-	autocrlf = input
-	attributesfile = /Users/benjamin/.gitattributes
+  excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = input
+  attributesfile = /Users/benjamin/.gitattributes
 [apply]
-        whitespace = nowarn
+  whitespace = nowarn
 [mergetool]
-        keepBackup = false
+  keepBackup = false
 [diff "spaceman-diff"]
-        command = spaceman-diff
+  command = spaceman-diff
 [diff "image"]
-	command = git-diff-images
+  command = git-diff-images
 [difftool]
-        prompt = false
+  prompt = false
 [help]
-        autocorrect = 1
+  autocorrect = 1
+[init]
+  defaultBranch = main
 [pull]
-	rebase = true
+  rebase = true
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
+  # See `git help config` (search for push.default)
+  # for more information on different options of the below setting.
+  #
+  # Setting to git 2.0 default to suppress warning message
+  default = simple
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [user]
-	name = Benjamin Hollway
-	email = benjamin@nothingrandom.com
-	signingkey = 053EDEC704302D5164A6DFE049825BBB14A34110
+  name = Benjamin Hollway
+  email = benjamin@nothingrandom.com
+  signingkey = 053EDEC704302D5164A6DFE049825BBB14A34110
 [commit]
-	gpgsign = true
+  gpgsign = true
+[gpg]
+  program = /usr/local/bin/gpg
