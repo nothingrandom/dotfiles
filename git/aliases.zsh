@@ -47,3 +47,7 @@ alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|m
 # Adds a new branch to the upstream under the same name and pushes it
 alias gpsup='git push --set-upstream origin -u head'
 alias gtrack='git-track'
+
+alias commit-types='cat ~/.dotfiles/git/commit-types'
+alias ct='commit-types'
+alias gct='commit-types'

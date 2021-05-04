@@ -1,0 +1,21 @@
+<type>[<scope>](issue #): <short summary>
+ │      │       |          │
+ |      |       |          └─> Summary in present tense. Not capitalized. No period at the end.
+ |      |       |
+ │      │       └─> Issue # (optional): Issue number if related to bug database.
+ │      │
+ │      └─> Scope (optional): eg. common, compiler, authentication, core
+ │
+ └─> type: feat | fix | docs | style | refactor | perf | test | build | ci | chore | revert
+
+feat: new feature for the user, not a new feature for build script
+fix: a bug fix
+docs: changes to the documentation only
+style: formatting, white-space, etc; no production code change
+refactor: code change that does not fix a bug or add a feature, eg. renaming a variable
+perf: code change that improves performance
+test: adding missing tests, refactoring tests; no production code change
+build: change that affects the build system or external dependencies (eg: yarn, webpack, rollup, gulp, npm)
+ci: change to the CI configuration files and scripts (eg: travis, jenkins, browserstack)
+chore: change that does not modify src or test files
+revert: reverts a previous commit
