@@ -21,7 +21,7 @@
     "npm-name-cli": "^2.6.1",
     "snyk": "^1.279.1",
     "spoof": "^2.0.4",
-    "stylelint": "^13.0.0",
+    "stylelint": "^13.3.1",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.14.2",
