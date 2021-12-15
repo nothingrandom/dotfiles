@@ -4,7 +4,7 @@
     "@vue/cli": "^4.0.5",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
-    "create-react-app": "^4.0.3",
+    "create-react-app": "^5.0.0",
     "depcheck": "^0.9.1",
     "docsify-cli": "^4.4.0",
     "eslint": "^6.8.0",
