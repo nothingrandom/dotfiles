@@ -73,12 +73,14 @@ fi
 # Setup for the ANDROID_HOME / android-sdk
 export ANDROID_HOME=/usr/local/share/android-sdk
 
-# Setup and autocompletion for CLOUD_SDK_HOME / google-cloud-skd
-export CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
-#source "${CLOUD_SDK_HOME}/path.zsh.inc"
-source "${CLOUD_SDK_HOME}/completion.zsh.inc"
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/benjamin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/path.zsh.inc'; fi
+# # Setup and autocompletion for CLOUD_SDK_HOME / google-cloud-skd
+# export CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
+# #source "${CLOUD_SDK_HOME}/path.zsh.inc"
+# source "${CLOUD_SDK_HOME}/completion.zsh.inc"
+# # The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/benjamin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/path.zsh.inc'; fi
+# # The next line enables shell command completion for gcloud.
+# if [ -f '/Users/benjamin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/completion.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/benjamin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/completion.zsh.inc'; fi
+# The next line updates PATH for Netlify's Git Credential Helper.
+# test -f '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc'

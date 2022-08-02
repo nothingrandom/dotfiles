@@ -10,11 +10,11 @@
   count   = !git shortlog -sn
   new     = checkout -b
   diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
-  sync = !/usr/local/bin/legit sync
-  publish = !/usr/local/bin/legit publish
-  unpublish = !/usr/local/bin/legit unpublish
-  undo = !/usr/local/bin/legit undo
-  branches = !/usr/local/bin/legit branches
+  sync = !/opt/homebrew/bin/legit sync
+  publish = !/opt/homebrew/bin/legit publish
+  unpublish = !/opt/homebrew/bin/legit unpublish
+  undo = !/opt/homebrew/bin/legit undo
+  branches = !/opt/homebrew/bin/legit branches
 [color]
   diff = auto
   status = auto
@@ -48,10 +48,10 @@
   # Setting to git 2.0 default to suppress warning message
   default = simple
 [filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [user]
 	name = Benjamin Hollway
 	email = benjamin@nothingrandom.com
@@ -59,4 +59,8 @@
 [commit]
   gpgsign = true
 [gpg]
-  program = /usr/local/bin/gpg
+	program = gpg2
+
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+# [include]
+  # path = /Users/benjamin/Library/Preferences/netlify/helper/git-config
