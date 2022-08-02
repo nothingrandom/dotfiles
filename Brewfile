@@ -35,7 +35,7 @@ brew 'zsh-syntax-highlighting'
 cask '1password'
 cask 'adobe-creative-cloud'
 cask 'alfred'
-# cask 'bartender' # now from setapp
+cask 'bartender'
 cask 'docker'
 cask 'dropbox'
 cask 'fantastical'

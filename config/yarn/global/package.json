@@ -1,9 +1,10 @@
 {
   "dependencies": {
     "@nothingrandom/roll": "/Users/benjamin/Documents/Git/roll",
-    "@vue/cli": "^4.0.5",
+    "@vue/cli": "^4.5.15",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
+    "create-next-app": "^10.2.2",
     "create-react-app": "^4.0.3",
     "depcheck": "^0.9.1",
     "docsify-cli": "^4.4.0",
@@ -18,6 +19,7 @@
     "gulp-cli": "^2.3.0",
     "lighthouse": "^5.6.0",
     "mddir": "^1.1.1",
+    "netlify-cli": "^8.16.1",
     "npm-name-cli": "^2.6.1",
     "snyk": "^1.279.1",
     "spoof": "^2.0.4",
