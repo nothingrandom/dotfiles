@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "@nothingrandom/roll": "/Users/benjamin/Documents/Git/roll",
-    "@vue/cli": "^4.5.15",
+    "@vue/cli": "^5.0.1",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
     "create-next-app": "^10.2.2",
-    "create-react-app": "^4.0.3",
+    "create-react-app": "^5.0.0",
     "depcheck": "^0.9.1",
-    "docsify-cli": "^4.4.0",
+    "docsify-cli": "^4.4.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -17,21 +17,21 @@
     "eslint-plugin-vue": "^6.1.2",
     "git-labelmaker": "^0.9.0",
     "gulp-cli": "^2.3.0",
-    "lighthouse": "^5.6.0",
+    "lighthouse": "^9.3.0",
     "mddir": "^1.1.1",
     "netlify-cli": "^8.16.1",
-    "npm-name-cli": "^2.6.1",
-    "snyk": "^1.279.1",
+    "npm-name-cli": "^4.0.0",
     "spoof": "^2.0.4",
-    "stylelint": "^13.0.0",
+    "stylelint": "^14.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.14.2",
     "vtop": "^0.6.1",
-    "vue-svgicon": "^3.0.0"
+    "vue-svgicon": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "yarn run snyk-protect"
   },
   "snyk": true
