@@ -73,6 +73,8 @@ fi
 # Setup for the ANDROID_HOME / android-sdk
 export ANDROID_HOME=/usr/local/share/android-sdk
 
+export FONTAWESOME_NPM_AUTH_TOKEN='B9206F85-8316-41F7-8B3C-1E9896AAE7D9'
+
 # # Setup and autocompletion for CLOUD_SDK_HOME / google-cloud-skd
 # export CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 # #source "${CLOUD_SDK_HOME}/path.zsh.inc"
