@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -11,3 +11,18 @@ patch:
   SNYK-JS-TREEKILL-536781:
     - snyk > snyk-sbt-plugin > tree-kill:
         patched: '2020-01-18T09:11:21.866Z'
+  SNYK-JS-LODASH-567746:
+    - netlify-cli > inquirer > lodash:
+        patched: '2023-09-22T16:55:58.473Z'
+        id: SNYK-JS-LODASH-567746
+        path: netlify-cli > inquirer > lodash
+    - netlify-cli > concordance > lodash:
+        patched: '2023-09-22T16:55:58.473Z'
+        id: SNYK-JS-LODASH-567746
+        path: netlify-cli > concordance > lodash
+    - netlify-cli > @netlify/build > @netlify/functions-utils > @netlify/zip-it-and-ship-it > archiver > archiver-utils > lodash:
+        patched: '2023-09-22T16:55:58.473Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          netlify-cli > @netlify/build > @netlify/functions-utils >
+          @netlify/zip-it-and-ship-it > archiver > archiver-utils > lodash
