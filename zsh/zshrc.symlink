@@ -86,3 +86,9 @@ export FONTAWESOME_NPM_AUTH_TOKEN='B9206F85-8316-41F7-8B3C-1E9896AAE7D9'
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 # test -f '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc'
+# bun completions
+[ -s "/Users/benjamin/.bun/_bun" ] && source "/Users/benjamin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
