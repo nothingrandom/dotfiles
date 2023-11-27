@@ -1,12 +1,10 @@
 {
   "dependencies": {
     "@nothingrandom/roll": "/Users/benjamin/Documents/Git/roll",
-    "@vue/cli": "^4.5.15",
     "@vue/cli-init": "^3.8.0",
     "babel-eslint": "^10.0.2",
     "create-next-app": "^10.2.2",
     "create-react-app": "^4.0.3",
-    "depcheck": "^0.9.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -18,14 +16,14 @@
     "gulp-cli": "^2.3.0",
     "lighthouse": "^5.6.0",
     "mddir": "^1.1.1",
-    "netlify-cli": "^16.4.1",
     "npm-name-cli": "^2.6.1",
     "snyk": "^1.279.1",
     "spoof": "^2.0.4",
-    "stylelint": "^13.0.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.14.2"
+    "stylelint": "^15.10.3",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-selector-bem-pattern": "^3.0.1",
+    "vtop": "^0.6.1"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
