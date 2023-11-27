@@ -55,9 +55,9 @@
 [user]
 	name = Benjamin Grant
 	email = benjamin@nothingrandom.com
-	signingkey = 053EDEC704302D5164A6DFE049825BBB14A34110
+	signingkey = 03EFF6DA548AA44C
 [commit]
-  gpgsign = true
+	gpgsign = true
 [gpg]
 	program = gpg2
 
