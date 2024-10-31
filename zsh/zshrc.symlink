@@ -5,7 +5,13 @@ export ZSH=$HOME/.dotfiles
 export PROJECTS=~/Documents/Git
 
 # Setup for PATH
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Setup for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=~/bin:$PATH
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -57,13 +63,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Setup for nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH=~/bin:$PATH
-
 ###-tns-completion-start-###
 if [ -f /Users/benjamin/.tnsrc ]; then
     source /Users/benjamin/.tnsrc
@@ -73,21 +72,15 @@ fi
 # Setup for the ANDROID_HOME / android-sdk
 export ANDROID_HOME=/usr/local/share/android-sdk
 
-export FONTAWESOME_NPM_AUTH_TOKEN='B9206F85-8316-41F7-8B3C-1E9896AAE7D9'
+# bun completions
+# [ -s "/Users/benjamin/.bun/_bun" ] && source "/Users/benjamin/.bun/_bun"
 
-# # Setup and autocompletion for CLOUD_SDK_HOME / google-cloud-skd
-# export CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
-# #source "${CLOUD_SDK_HOME}/path.zsh.inc"
-# source "${CLOUD_SDK_HOME}/completion.zsh.inc"
-# # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/benjamin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/path.zsh.inc'; fi
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/benjamin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjamin/google-cloud-sdk/completion.zsh.inc'; fi
+# bun
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
 
 # The next line updates PATH for Netlify's Git Credential Helper.
-# test -f '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc'
-# bun completions
-[ -s "/Users/benjamin/.bun/_bun" ] && source "/Users/benjamin/.bun/_bun"
+test -f '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc'
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
