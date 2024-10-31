@@ -48,19 +48,26 @@
   # Setting to git 2.0 default to suppress warning message
   default = simple
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [user]
-	name = Benjamin Grant
-	email = benjamin@nothingrandom.com
-	signingkey = 03EFF6DA548AA44C
+  name = Benjamin Grant
+  email = benjamin@nothingrandom.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO4J0MbY06qkAmKdVQ3WgK780SnszHGbpCCc8/8glBzX
 [commit]
-	gpgsign = true
+  gpgsign = true
 [gpg]
-	program = gpg2
+  program = gpg2
+  format = ssh
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 
 # This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
 # [include]
   # path = /Users/benjamin/Library/Preferences/netlify/helper/git-config
+
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+  path = /Users/benjamin/Library/Preferences/netlify/helper/git-config
