@@ -149,6 +149,9 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # System: Disable UI sounds
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 
+# Window: Turn off tiled window margins
+defaults write com.apple.WindowManager EnableTiledWindowMargins -int 0
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -203,7 +206,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
+systemsetup -settimezone "Europe/London" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
