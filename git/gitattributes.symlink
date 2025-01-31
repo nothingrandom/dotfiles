@@ -4,7 +4,7 @@
 ###############################
 #       git-image-diff        #
 ###############################
-# Set images to be `git-diff`ed by `spaceman-diff` instead
+# Set images to be `git-diff`ed by `git-diff-image` instead
 *.png   diff=image
 *.jpg   diff=image
 *.jpeg  diff=image

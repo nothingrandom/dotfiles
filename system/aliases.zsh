@@ -11,4 +11,4 @@ alias la='ls -A -G'
 
 # alias ls="ls -l "$@" | nice-ls"
 
-alias top="vtop" # alias / override top
+alias top="bunx vtop" # alias / override top

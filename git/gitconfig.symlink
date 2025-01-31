@@ -29,8 +29,6 @@
   whitespace = nowarn
 [mergetool]
   keepBackup = false
-[diff "spaceman-diff"]
-  command = spaceman-diff
 [diff "image"]
   command = git-diff-images
 [difftool]

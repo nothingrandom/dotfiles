@@ -42,9 +42,9 @@ done
 
 export ZSH=$HOME/.dotfiles
 
-# Update dotfiles themselves
-echo "› git pull"
-git -C $ZSH pull
+# # Update dotfiles themselves
+# echo "› git pull"
+# git -C $ZSH pull
 
 # Set macOS defaults
 $ZSH/macos/set-defaults.sh
