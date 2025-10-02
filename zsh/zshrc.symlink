@@ -79,3 +79,8 @@ test -f '/Users/benjamin/Library/Preferences/netlify/helper/path.zsh.inc' && sou
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 source /Users/benjamin/.config/op/plugins.sh
+
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+export GOOGLE_CLOUD_PROJECT=$(op read "op://Private/Gemini Google Cloud Project/GOOGLE_CLOUD_PROJECT")
+export GEMINI_API_KEY=$(op read "op://Private/Gemini Google Cloud Project/GEMINI_API_KEY")
+eval "$(atuin init zsh)"
