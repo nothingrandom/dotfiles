@@ -8,6 +8,9 @@
 # Run sudo ./set-defaults.sh and you'll be good to go.
 
 echo "Setting macOS defaults..."
+echo "Note: You may see a warning about 'Globally disabling the assessment system' - this is expected."
+echo "This disables Gatekeeper to allow running unsigned applications."
+echo ""
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -182,7 +185,7 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -int 1
 sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 sudo defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
@@ -206,7 +209,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/London" > /dev/null
+if ! sudo systemsetup -settimezone "Europe/London" > /dev/null 2>&1; then
+    echo "Warning: Could not set timezone (requires full disk access)"
+fi
 
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
@@ -222,7 +227,9 @@ sudo pmset -a lidwake 1
 # sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+if ! sudo systemsetup -setrestartfreeze on 2>/dev/null; then
+    echo "Warning: Could not set restart on freeze (requires full disk access)"
+fi
 
 # Sleep the display after 15 minutes
 # sudo pmset -a displaysleep 15
@@ -253,7 +260,9 @@ sudo pmset -a hibernatemode 0
 # sudo chflags uchg /private/var/vm/sleepimage
 
 # Lock: Disable sleep
-sudo systemsetup -setcomputersleep Never
+if ! sudo systemsetup -setcomputersleep Never 2>/dev/null; then
+    echo "Warning: Could not set computer sleep to Never (requires full disk access)"
+fi
 defaults -currentHost write com.apple.screensaver idleTime 0
 
 ###############################################################################
@@ -333,7 +342,7 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 # Finder: Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
-# Finder: Always open everything in Finder's list view. This is important.
+# Finder: Always open everything in Finder's column view. This is important.
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Finder: Show the ~/Library folder.
@@ -377,13 +386,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Enable Secure Keyboard Entry in Terminal.app
 # See: https://security.stackexchange.com/a/47786/8918
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
-
-###############################################################################
-# Time Machine                                                                #
-###############################################################################
-
-# Prevent Time Machine from prompting to use new hard drives as backup volume
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -475,3 +477,8 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo ""
+echo "If you saw warnings about 'full disk access', you may need to:"
+echo "1. Go to System Settings > Privacy & Security > Full Disk Access"
+echo "2. Add Terminal.app (or your terminal application) to the list"
+echo "3. Re-run this script"
