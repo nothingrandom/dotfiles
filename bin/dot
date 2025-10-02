@@ -5,8 +5,6 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
-sudo -v
-
 set -e
 
 parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
@@ -42,12 +40,15 @@ done
 
 export ZSH=$HOME/.dotfiles
 
-# # Update dotfiles themselves
-# echo "› git pull"
-# git -C $ZSH pull
+# Update dotfiles themselves
+echo "› git pull"
+git -C $ZSH pull
 
 # Set macOS defaults
 $ZSH/macos/set-defaults.sh
+
+# Set macOS hostname
+# $ZSH/macos/set-hostname.sh
 
 # Install homebrew
 $ZSH/homebrew/install.sh 2>&1

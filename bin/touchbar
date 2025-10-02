@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# Restarts the touchbar when it crashes
-
-pkill "Touch Bar agent";
-killall "ControlStrip";
