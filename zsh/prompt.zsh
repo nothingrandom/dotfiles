@@ -131,6 +131,11 @@ prompt_pure_preprompt_render() {
 	# Initialize the preprompt array.
 	local -a preprompt_parts
 
+	# Suspended jobs in background.
+	if ((${(M)#jobstates:#suspended:*} != 0)); then
+		preprompt_parts+='%F{$prompt_pure_colors[suspended_jobs]}✦'
+	fi
+
 	# Username and machine, if applicable.
 	[[ -n $prompt_pure_state[username] ]] && preprompt_parts+=($prompt_pure_state[username])
 
@@ -222,6 +227,15 @@ prompt_pure_precmd() {
 		export VIRTUAL_ENV_DISABLE_PROMPT=12
 	fi
 
+	# Nix package manager integration. If used from within 'nix shell' - shell name is shown like so:
+	# ~/Projects/flake-utils-plus master
+	# flake-utils-plus ❯
+	if zstyle -T ":prompt:pure:environment:nix-shell" show; then
+		if [[ -n $IN_NIX_SHELL ]]; then
+			psvar[12]="${name:-nix-shell}"
+		fi
+	fi
+
 	# Make sure VIM prompt is reset.
 	prompt_pure_reset_prompt_symbol
 
@@ -272,7 +286,7 @@ prompt_pure_async_vcs_info() {
 
 	local -A info
 	info[pwd]=$PWD
-	info[branch]=$vcs_info_msg_0_
+	info[branch]=${vcs_info_msg_0_//\%/%%}
 	info[top]=$vcs_info_msg_1_
 	info[action]=$vcs_info_msg_2_
 
@@ -283,11 +297,18 @@ prompt_pure_async_vcs_info() {
 prompt_pure_async_git_dirty() {
 	setopt localoptions noshwordsplit
 	local untracked_dirty=$1
+	local untracked_git_mode=$(command git config --get status.showUntrackedFiles)
+	if [[ "$untracked_git_mode" != 'no' ]]; then
+		untracked_git_mode='normal'
+	fi
+
+	# Prevent e.g. `git status` from refreshing the index as a side effect.
+	export GIT_OPTIONAL_LOCKS=0
 
 	if [[ $untracked_dirty = 0 ]]; then
 		command git diff --no-ext-diff --quiet --exit-code
 	else
-		test -z "$(command git status --porcelain --ignore-submodules -unormal)"
+		test -z "$(command git status --porcelain -u${untracked_git_mode})"
 	fi
 
 	return $?
@@ -296,19 +317,29 @@ prompt_pure_async_git_dirty() {
 prompt_pure_async_git_fetch() {
 	setopt localoptions noshwordsplit
 
+	local only_upstream=${1:-0}
+
 	# Sets `GIT_TERMINAL_PROMPT=0` to disable authentication prompt for Git fetch (Git 2.3+).
 	export GIT_TERMINAL_PROMPT=0
 	# Set SSH `BachMode` to disable all interactive SSH password prompting.
 	export GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-"ssh"} -o BatchMode=yes"
 
-	local ref
-	ref=$(command git symbolic-ref -q HEAD)
-	local -a remote
-	remote=($(command git for-each-ref --format='%(upstream:remotename) %(refname)' $ref))
+	# If gpg-agent is set to handle SSH keys for `git fetch`, make
+	# sure it doesn't corrupt the parent TTY.
+	# Setting an empty GPG_TTY forces pinentry-curses to close immediately rather
+	# than stall indefinitely waiting for user input.
+	export GPG_TTY=
 
-	if [[ -z $remote[1] ]]; then
-		# No remote specified for this branch, skip fetch.
-		return 97
+	local -a remote
+	if ((only_upstream)); then
+		local ref
+		ref=$(command git symbolic-ref -q HEAD)
+		# Set remote to only fetch information for the current branch.
+		remote=($(command git for-each-ref --format='%(upstream:remotename) %(refname)' $ref))
+		if [[ -z $remote[1] ]]; then
+			# No remote specified for this branch, skip fetch.
+			return 97
+		fi
 	fi
 
 	# Default return code, which indicates Git fetch failure.
@@ -336,11 +367,12 @@ prompt_pure_async_git_fetch() {
 		fi
 	' CHLD
 
-	# Only fetch information for the current branch and avoid
-	# fetching tags or submodules to speed up the process.
+	# Do git fetch and avoid fetching tags or
+	# submodules to speed up the process.
 	command git -c gc.auto=0 fetch \
 		--quiet \
 		--no-tags \
+		--no-prune-tags \
 		--recurse-submodules=no \
 		$remote &>/dev/null &
 	wait $! || return $fail_code
@@ -434,8 +466,9 @@ prompt_pure_async_refresh() {
 
 	# Do not perform `git fetch` if it is disabled or in home folder.
 	if (( ${PURE_GIT_PULL:-1} )) && [[ $prompt_pure_vcs_info[top] != $HOME ]]; then
-		# Tell the async worker to do a `git fetch`.
-		async_job "prompt_pure" prompt_pure_async_git_fetch
+		zstyle -t :prompt:pure:git:fetch only_upstream
+		local only_upstream=$((? == 0))
+		async_job "prompt_pure" prompt_pure_async_git_fetch $only_upstream
 	fi
 
 	# If dirty checking is sufficiently fast,
@@ -676,25 +709,43 @@ prompt_pure_state_setup() {
 	# Show `username@host` if logged in through SSH.
 	[[ -n $ssh_connection ]] && username='%F{$prompt_pure_colors[user]}%n%f'"$hostname"
 
+	# Show `username@host` if inside a container and not in GitHub Codespaces.
+	[[ -z "${CODESPACES}" ]] && prompt_pure_is_inside_container && username='%F{$prompt_pure_colors[user]}%n%f'"$hostname"
+
 	# Show `username@host` if root, with username in default color.
 	[[ $UID -eq 0 ]] && username='%F{$prompt_pure_colors[user:root]}%n%f'"$hostname"
 
 	typeset -gA prompt_pure_state
-	prompt_pure_state[version]="1.11.0"
+	prompt_pure_state[version]="1.23.0"
 	prompt_pure_state+=(
 		username "$username"
 		prompt	 "${PURE_PROMPT_SYMBOL:-❯}"
 	)
 }
 
+# Return true if executing inside a Docker, OCI, LXC, or systemd-nspawn container.
+prompt_pure_is_inside_container() {
+	local -r cgroup_file='/proc/1/cgroup'
+	local -r nspawn_file='/run/host/container-manager'
+	[[ -r "$cgroup_file" && "$(< $cgroup_file)" = *(lxc|docker)* ]] \
+		|| [[ "$container" == "lxc" ]] \
+		|| [[ "$container" == "oci" ]] \
+		|| [[ "$container" == "podman" ]] \
+		|| [[ -r "$nspawn_file" ]]
+}
+
 prompt_pure_system_report() {
 	setopt localoptions noshwordsplit
 
-	print - "- Zsh: $($SHELL --version) ($SHELL)"
+	local shell=$SHELL
+	if [[ -z $shell ]]; then
+		shell=$commands[zsh]
+	fi
+	print - "- Zsh: $($shell --version) ($shell)"
 	print -n - "- Operating system: "
 	case "$(uname -s)" in
 		Darwin)	print "$(sw_vers -productName) $(sw_vers -productVersion) ($(sw_vers -buildVersion))";;
-		*)	print "$(uname -s) ($(uname -v))";;
+		*)	print "$(uname -s) ($(uname -r) $(uname -v) $(uname -m) $(uname -o))";;
 	esac
 	print - "- Terminal program: ${TERM_PROGRAM:-unknown} (${TERM_PROGRAM_VERSION:-unknown})"
 	print -n - "- Tmux: "
@@ -706,10 +757,12 @@ prompt_pure_system_report() {
 
 	print - "- Pure state:"
 	for k v in "${(@kv)prompt_pure_state}"; do
-		print - "    - $k: \`${(q)v}\`"
+		print - "    - $k: \`${(q-)v}\`"
 	done
+	print - "- zsh-async version: \`${ASYNC_VERSION}\`"
 	print - "- PROMPT: \`$(typeset -p PROMPT)\`"
 	print - "- Colors: \`$(typeset -p prompt_pure_colors)\`"
+	print - "- TERM: \`$(typeset -p TERM)\`"
 	print - "- Virtualenv: \`$(typeset -p VIRTUAL_ENV_DISABLE_PROMPT)\`"
 	print - "- Conda: \`$(typeset -p CONDA_CHANGEPS1)\`"
 
@@ -778,6 +831,7 @@ prompt_pure_setup() {
 		prompt:error         red
 		prompt:success       magenta
 		prompt:continuation  242
+		suspended_jobs       red
 		user                 242
 		user:root            default
 		virtualenv           242
