@@ -1,0 +1,83 @@
+#!/bin/bash
+#
+# Convert a .mov / .mp4 video into an optimized animated .gif.
+#
+# Based on https://gist.github.com/SheldonWangRJT/8d3f44a35c8d1386a396b9b49b43c385
+# Requires ffmpeg and gifsicle (see Brewfile).
+
+set -euo pipefail
+
+usage()
+{
+    echo "Usage: $0 [<options>] <input.mov> [output.gif]"
+    echo
+    echo "Converts a video to an optimized animated GIF, ideal for PRs and web previews."
+    echo
+    echo "Options:"
+    echo "  -h         Print this help."
+    echo "  -r <fps>   Frame rate of the GIF; defaults to 10."
+    echo "  -w <px>    Scale output to this width in pixels, preserving aspect ratio."
+    echo
+    echo "If no output file is given, the input name is used with a .gif extension."
+}
+
+fps=10
+width=
+while getopts "hr:w:" opt
+do
+    case "$opt" in
+    h)
+        usage
+        exit 0
+        ;;
+    r)
+        fps="$OPTARG"
+        ;;
+    w)
+        width="$OPTARG"
+        ;;
+    *)
+        usage
+        exit 1
+        ;;
+    esac
+done
+shift $(( OPTIND - 1 ))
+
+if [ -z "${1-}" ]
+then
+    usage
+    exit 1
+fi
+
+input="$1"
+output="${2-${input%.*}.gif}"
+
+if [ ! -f "$input" ]
+then
+    echo "$input: No such file." >&2
+    exit 1
+fi
+
+if ! which ffmpeg > /dev/null
+then
+    echo 'ffmpeg is not installed (brew install ffmpeg).' >&2
+    exit 1
+fi
+
+if ! which gifsicle > /dev/null
+then
+    echo 'gifsicle is not installed (brew install gifsicle).' >&2
+    exit 1
+fi
+
+filters="fps=$fps"
+if [ -n "$width" ]
+then
+    filters="$filters,scale=$width:-1:flags=lanczos"
+fi
+
+ffmpeg -i "$input" -vf "$filters" -pix_fmt rgb8 "$output"
+gifsicle -O3 "$output" -o "$output"
+
+echo "Wrote $output"
