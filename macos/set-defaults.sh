@@ -155,6 +155,9 @@ defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 # Window: Turn off tiled window margins
 defaults write com.apple.WindowManager EnableTiledWindowMargins -int 0
 
+# Menu bar: Set the clock to analog (prefer iStat Menus for a better clock)
+defaults write com.apple.menuextra.clock IsAnalog -bool true
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
