@@ -61,8 +61,8 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ###-tns-completion-start-###
-if [ -f /Users/benjamin/.tnsrc ]; then
-    source /Users/benjamin/.tnsrc
+if [ -f "$HOME/.tnsrc" ]; then
+    source "$HOME/.tnsrc"
 fi
 ###-tns-completion-end-###
 
@@ -70,12 +70,12 @@ fi
 export ANDROID_HOME=/usr/local/share/android-sdk
 
 # bun completions
-[ -s "/Users/benjamin/.bun/_bun" ] && source "/Users/benjamin/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-source /Users/benjamin/.config/op/plugins.sh
+source "$HOME/.config/op/plugins.sh"
 
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 export GOOGLE_CLOUD_PROJECT=$(op read "op://Private/Gemini Google Cloud Project/GOOGLE_CLOUD_PROJECT")

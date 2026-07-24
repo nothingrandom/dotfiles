@@ -24,7 +24,7 @@
   excludesfile = ~/.gitignore
   editor = vim
   autocrlf = input
-  attributesfile = /Users/benjamin/.gitattributes
+  attributesfile = ~/.gitattributes
 [apply]
   whitespace = nowarn
 [mergetool]

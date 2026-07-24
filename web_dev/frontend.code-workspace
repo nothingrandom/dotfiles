@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "LL extension",
-			"path": "/Users/benjamin/Documents/Git/tfs/ll-extension"
+			"name": "addons-frontend",
+			"path": "../../Documents/Git/addons-frontend"
+		},
+		{
+			"name": "addons-server",
+			"path": "../../Documents/Git/addons-server"
 		},
 	],
 	"settings": {}
