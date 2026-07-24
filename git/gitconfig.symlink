@@ -61,7 +61,3 @@
   format = ssh
 [gpg "ssh"]
   program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-
-# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
-[include]
-  path = /Users/benjamin/Library/Preferences/netlify/helper/git-config
