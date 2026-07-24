@@ -186,3 +186,9 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/git,node,code,linux,macos,windows
 
 npmrc.symlink
+
+### Claude Code (never commit local settings/state/secrets) ###
+claude/settings.json
+claude/settings.local.json
+claude/.credentials.json
+claude/.claude.json
