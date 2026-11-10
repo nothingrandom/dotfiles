@@ -9,7 +9,7 @@
   rank    = !$ZSH/bin/git-rank-contributors
   count   = !git shortlog -sn
   new     = checkout -b
-  diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
+  diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; d=$(mktemp -d -t git-diff-image.XXXXXX); GIT_DIFF_IMAGE_ENABLED=1 GIT_DIFF_IMAGE_OUTDIR=\"$d\" git diff \"$@\"; if [ -n \"$(ls -A \"$d\")\" ]; then o=open; command -v xdg-open >/dev/null 2>&1 && o=xdg-open; \"$o\" \"$d\"/*.png; else rmdir \"$d\"; fi; }; f"
   sync = !/opt/homebrew/bin/legit sync
   publish = !/opt/homebrew/bin/legit publish
   unpublish = !/opt/homebrew/bin/legit unpublish

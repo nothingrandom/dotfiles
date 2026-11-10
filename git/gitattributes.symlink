@@ -10,3 +10,9 @@
 *.jpeg  diff=image
 *.gif   diff=image
 *.ico   diff=image
+*.webp  diff=image
+*.avif  diff=image
+*.heic  diff=image
+*.bmp   diff=image
+*.tif   diff=image
+*.tiff  diff=image

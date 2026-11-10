@@ -1,6 +1,16 @@
 #!/bin/bash
 set -euo pipefail
 
+# git calls this as a diff driver with 7 arguments. Running it by hand is
+# almost always a mix-up with the user-facing `git diff-image` alias.
+if [ $# -lt 1 ]
+then
+    echo "$(basename "$0") is a git diff driver, not a command to run directly." >&2
+    echo "To see image diffs, run:  git diff-image   (aliased to 'gdi')" >&2
+    echo "Plain 'git diff' shows image metadata only." >&2
+    exit 1
+fi
+
 name="$1"
 f1="${2-/dev/null}"
 f2="${5-/dev/null}"
@@ -56,7 +66,7 @@ thisdir="$(dirname $(readlink_f "$0"))"
 e_flag=''
 if [ -z "${GIT_DIFF_IMAGE_ENABLED-}" ] || \
    ! which compare > /dev/null || \
-   ! which montage > /dev/null
+   ( ! which magick > /dev/null && ! which convert > /dev/null )
 then
   e_flag='-e'
 fi

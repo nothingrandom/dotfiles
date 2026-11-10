@@ -86,10 +86,26 @@ then
 fi
 if [[ -z "$name2" ]]
 then
-    name1="$f2"
+    name2="$f2"
 fi
 
-ext="${name1##*.}"
+tmpfiles=()
+cleanup()
+{
+    if [ ${#tmpfiles[@]} -gt 0 ]
+    then
+        rm -f "${tmpfiles[@]}"
+    fi
+}
+trap cleanup EXIT
+
+displayname="$name1"
+if [ "$displayname" = /dev/null ]
+then
+    displayname="$name2"
+fi
+
+ext="${displayname##*.}"
 
 if diff "$f1" "$f2" >/dev/null
 then
@@ -106,6 +122,7 @@ exif()
 
     local b="$(basename "$1")"
     local d="$(mktemp -t "$b.XXXXXX")"
+    tmpfiles+=("$d")
 
     exiftool "$1" | grep -v 'File Name' | \
                     grep -v 'Directory' | \
@@ -144,21 +161,47 @@ then
     exit 0
 fi
 
+im()
+{
+    if which magick > /dev/null 2>&1
+    then
+        magick "$@"
+    else
+        convert "$@"
+    fi
+}
+
 if \
     ! which compare > /dev/null || \
-    ! which montage > /dev/null
+    ( ! which magick > /dev/null && ! which convert > /dev/null )
 then
     echo 'ImageMagick is not installed.' >&2
     exit 1
 fi
 
-if [[ $exifdiff = 0 ]] && compare "$f1" "$f2" /dev/null
+if [[ $exifdiff = 0 ]] && compare "$f1" "$f2" /dev/null 2>/dev/null
 then
     exit 0
 fi
 
-bn="$(basename "$f1")"
-destfile="$(mktemp -t "$bn.XXXXXX").png"
+bn="$(basename "$displayname")"
+
+# With OUTDIR set, a wrapper is collecting every image in one `git diff` run so
+# it can open them as a single batch instead of one viewer window per file.
+if [ -n "${GIT_DIFF_IMAGE_OUTDIR-}" ]
+then
+    destdir="$GIT_DIFF_IMAGE_OUTDIR"
+else
+    destdir="$(mktemp -d -t diff-image.XXXXXX)"
+fi
+stem="${bn%.*}"
+destfile="$destdir/$stem.png"
+n=1
+while [ -e "$destfile" ]
+do
+    destfile="$destdir/$stem-$n.png"
+    n=$(( n + 1 ))
+done
 
 if [ -z "$fuzz" ] && ( [ "$ext" = "jpeg" ] || [ "$ext" = "jpg" ] )
 then
@@ -185,22 +228,89 @@ fi
 
 do_compare()
 {
-    compare $color_flag $fuzz_flag $backgroundcolor_flag "$f1" "$f2" png:- | \
-        montage -geometry +4+4 $backgroundcolor_flag "$f1" - "$f2" png:- >"$destfile" 2>/dev/null || true
+    local panes=()
+
+    # An added or deleted image has only one side; there is nothing to compare,
+    # and feeding /dev/null to ImageMagick just errors out.
+    if [ "$f1" = /dev/null ]
+    then
+        panes=("$f2")
+    elif [ "$f2" = /dev/null ]
+    then
+        panes=("$f1")
+    else
+        local diffpng="$(mktemp -t "$bn.diff.XXXXXX")"
+        tmpfiles+=("$diffpng")
+
+        # compare exits non-zero whenever the images differ, which is the whole
+        # point here, so its status says nothing about success. An empty result
+        # does: that means compare bailed, usually on a dimension mismatch.
+        compare $color_flag $fuzz_flag $backgroundcolor_flag \
+            "$f1" "$f2" "png:$diffpng" 2>/dev/null || true
+
+        if [ -s "$diffpng" ]
+        then
+            panes=("$f1" "$diffpng" "$f2")
+        else
+            echo "diff-image: $name1 and $name2 are not directly comparable; showing both." >&2
+            panes=("$f1" "$f2")
+        fi
+    fi
+
+    # +append rather than montage: Homebrew ships ImageMagick with an empty
+    # font typemap, and montage needs a font to lay out its cells even when
+    # labels are off, so it fails on every invocation there.
+    local bg="${backgroundcolor:-white}"
+    if ! im -background "$bg" "${panes[@]}" -splice 8x0 +append \
+            -bordercolor "$bg" -border 4 "png:$destfile"
+    then
+        echo "diff-image: could not assemble comparison for $name1" >&2
+        return 1
+    fi
 }
 
+# Compositing a very wide image is slow and the result is unreadable anyway,
+# so hand the originals to the viewer side by side instead.
+w=$(exiftool -p '$ImageWidth' "$f1" 2>/dev/null || true)
+huge=false
+if [[ ${w:-0} -ge 10000 ]]
+then
+    huge=true
+fi
+
+copy_originals()
+{
+    local side
+    for side in "$f1" "$f2"
+    do
+        if [ "$side" != /dev/null ]
+        then
+            cp "$side" "$destdir/$stem-$(basename "$side").png"
+        fi
+    done
+}
+
+if [ -n "${GIT_DIFF_IMAGE_OUTDIR-}" ]
+then
+    if $huge
+    then
+        copy_originals
+    else
+        do_compare || true
+    fi
+    exit 0
+fi
+
+opener=open
 if which xdg-open > /dev/null
 then
-    do_compare
-    xdg-open "$destfile"
+    opener=xdg-open
+fi
+
+if $huge
+then
+    copy_originals
+    "$opener" "$destdir"/*.png
 else
-    w=$(exiftool -p '$ImageWidth' "$f1" || true)
-    if [[ $w -ge 10000 ]]
-    then
-        cp "$f1" "$destfile"
-        exec open "$destfile" "$f2"
-    else
-        do_compare
-        exec open "$destfile"
-    fi
+    do_compare && "$opener" "$destfile"
 fi
